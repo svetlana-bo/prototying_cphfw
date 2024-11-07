@@ -1,0 +1,109 @@
+.body {
+    background-color: #f8f7f7;
+}
+
+/* Header */
+.header-container {
+    background-color: #3E3E53;
+}
+
+.logo {
+    max-width: 33px;
+    height: 35.453px;
+    flex-shrink: 0;
+}
+
+.header-button-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+}
+
+.log-in-button {
+    display: flex;
+    flex-direction: row;
+    max-width: 105px;
+    color: #DE96AB;
+}
+
+.search-button {
+    display: flex;
+}
+
+.nav-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-links {
+    color: #f8f7f7;
+    font-family: SeoulNamsan;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.28px;
+}
+
+/* Header end */
+
+/* Mood Section */
+
+.mood-container {
+    background-image: url(images/Index-PinkCPHMap.svg);
+    height: 45vh;
+    background-repeat: no-repeat;
+}
+
+.mood-text{
+    font: Advercase Demo;
+    color: #3E3E53;
+    justify-content: center;
+}
+
+/* Mood End */
+
+/* Main */
+
+.indexphoto-header {
+    color: #DE96AB;
+}
+
+.indexphoto-text {
+    color: #DE96AB;
+}
+
+.index-photo-button {
+    color: #DE96AB;
+}
+
+.indexsustainability-header {
+    color: #282E4C;
+}
+
+.indexsustainability-text {
+    color: #434d80;
+}
+
+.index-designer-button {
+    color: #282E4C;
+}
+
+/* Main End */
+
+/* Partner Section */
+
+.partners {
+    text-align: center;
+    background: radial-gradient(50% 50% at 50% 50%, #DE96AB 0%, #3E3E53 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.partners-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 35px;
+}

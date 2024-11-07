@@ -8,31 +8,38 @@
     <link rel="stylesheet" href="style.css">
  </head>
 
- <!-- Reminders 
-  Add links in nav to pages
- -->
-
-<body>
+<body class="body">
     <!-- Header Section -->
      <header id="index-top" class="header-container">
-        <img src="icons/CPHFWLogo.svg" alt="Copenhagen Fashion Week Logo" class="logo">
-        <button class="log-in-button">Log in</button>
-        <button class="search-buttonr">
-            <img src="icons/Search.svg" alt="Search Icon" class="search-button">
-        </button>
+        <a href="https://copenhagenfashionweek.com/">
+            <img src="icons/CPHFWLogo.svg" alt="Copenhagen Fashion Week Logo" class="logo">
+        </a>
 
-        <nav class="nav-links">
-            <a href="#index-top">Home</a>
-            <a href="#">Designers</a>
-            <a href="#">Trends</a>
-            <a href="#">#CPHFW</a>
-        </nav>
+        <div class="header-button-container">
+            <a class="log-in-button" href="sign_up.html">
+                <button>Log in</button>
+            </a>
+
+            <button class="search-buttonr">
+                <img src="icons/Search.svg" alt="Search Icon" class="search-button">
+            </button>
+        </div>
+        
+        <div class="nav-links-container">
+            <nav>
+                <a class="nav-links" href="#index-top">Home</a>
+                <a class="nav-links" href="designers.html">Designers</a>
+                <a class="nav-links" href="trends.html">Trends</a>
+                <a class="nav-links" href="cphfw25.html">#CPHFW</a>
+            </nav>
+        </div>
+
      </header>
      <!-- Header End -->
 
      <!-- Mood and Title Section -->
      <section class="mood-container">
-        <div>
+        <div class="mood-text">
             <h1>COPENHAGEN FASHION WEEK</h1>
             <span>5-9 Aug</span>
         </div>
@@ -42,23 +49,37 @@
     <!-- Main -->
      <main>
         <section class="photo-section">
-            <h2>
+            <h2 class="indexphoto-header">
                 <span>
                     <img src="icons/Camera.svg" alt="camera icon">
                 </span>
+
                 Get Involved
             </h2>
-            <p> Take a photo with our filter and post it with our hashtag #CPHFW </p>
-            <button class="index-photo-button">Take a photo</button>
+            <img src="images/Index-getinvolved.svg" alt="Blonde lady wearing pink">
+            
+            <p class="indexphoto-text"> Take a photo with our filter and post it with our hashtag #CPHFW </p>
+
+            <a href="take_a_pic.html">
+                <button class="index-photo-button">Take a photo</button>
+            </a>
         </section>
 
         <section class="sustainability-section">
-            <h2>
+            <h2 class="indexsustainability-header">
                 Sustainability
             </h2>
-            <p>Our mission is to promote sustainable fashion. Learn more about participating designers that make this mission a reality.</p>
-            <button class="index-designer-button">See Designers</button>
+
+            <img src="images/Index-sustainability.svg" alt="Woman wearing black posing">
+
+            <p class="indexsustainability-text">Our mission is to promote sustainable fashion. Learn more about participating designers that make this mission a reality.</p>
+            
+            <a href="designers.html">
+                <button class="index-designer-button">See Designers</button>
+            </a>
         </section>
+
+        <!-- Partner Section -->
 
         <section class="partners">
         <h2>Copenhagen Fashion Week is made possible through its curated and dedicated partners</h2>
