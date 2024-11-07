@@ -1,0 +1,334 @@
+/*---------------------------HEADER---------------------------*/
+.fashion-week-container { 
+    background-color: #fff; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    font-weight: 400; 
+}
+
+.header { 
+    background-color: #3e3e53; 
+    display: flex; 
+    width: 100%; 
+    max-width: 395px; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    font-family: SeoulNamsan, 
+    sans-serif; 
+    padding: 28px 16px 12px; 
+}
+
+.header-content { 
+    display: flex; 
+    width: 100%; 
+    gap: 20px; 
+    font-size: 16px; 
+    color: #fff; 
+    text-align: center; 
+    justify-content: space-between; 
+}
+
+@media (max-width: 991px) { 
+    .header-content { margin-left: 8px; } }
+
+.logo 
+{ aspect-ratio: 0.92; 
+    object-fit: contain; 
+    object-position: center; 
+    width: 33px; 
+    border-radius: 17px; 
+}
+
+.login-container 
+{ align-self: flex-start; 
+    display: flex; 
+    gap: 9px; 
+}
+
+.login-button 
+{ align-self: stretch; 
+    border-radius: 13px; 
+    background-color: #de96ab; 
+    padding: 4px 20px; 
+    color:#fef7ff;
+}
+
+.login-icon 
+{ aspect-ratio: 1; 
+    object-fit: contain; 
+    object-position: center; width: 20px; 
+    fill: #fef7ff; 
+    margin: auto 0; 
+}
+
+.nav-container { 
+    display: flex; 
+    margin-top: 28px; 
+    width: 100%; 
+    max-width: 337px; 
+    font-size: 14px; 
+    color: #fcf5f7; 
+    letter-spacing: 0.28px; 
+}
+
+@media (max-width: 991px) { 
+    .nav-container { white-space: normal; } }
+
+.nav-indicator { 
+    align-self: flex-end; 
+    z-index: 10; 
+    width: 41px; 
+    height: 1px;
+    margin: 20px -39px 0 0;
+    border: 1px solid #de96ab;
+    display: none; 
+}
+
+.nav-links { 
+    display: flex; 
+    min-height: 21px; 
+    align-items: center; 
+    gap: 36px; 
+    justify-content: flex-start; 
+    flex-grow: 1; 
+    flex-basis: auto; 
+    list-style-type: none; 
+}
+
+@media (max-width: 991px) { 
+    .nav-links { white-space: normal; } }
+
+    .nav-link { 
+    align-self: stretch; 
+    margin: auto 0; 
+}
+
+.nav-link-active { 
+    color: #de96ab;
+    text-decoration: underline; 
+}
+
+
+/*---------------------------HERO SECTION---------------------------*/
+.hero-section { 
+    display: flex; 
+    flex-direction: column; 
+    position: relative; 
+    aspect-ratio: 1.09; 
+    width: 100%; 
+    max-width: 388px; 
+    color: #3e3e53; 
+    padding: 86px 30px; 
+    font: 48px/72px Advercase Demo, sans-serif; 
+}
+
+@media (max-width: 991px) { 
+    .hero-section { 
+        font-size: 40px; 
+        line-height: 67px; 
+        margin-left: 2px; 
+        padding: 0 20px; } 
+    }
+
+.hero-background { 
+    position: absolute; 
+    inset: 0; 
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover; 
+    object-position: center; }
+
+.hero-content { 
+    position: relative; 
+}
+
+.main-content { 
+    z-index: 10; 
+    display: flex; 
+    width: 100%; 
+    max-width: 361px; 
+    flex-direction: column; 
+    margin: -37px 0 0 14px; 
+}
+
+@media (max-width: 991px) { 
+    .main-content { margin-left: 10px; } }
+
+    .content-row { 
+    display: flex; 
+    gap: 1px; 
+}
+
+/*---------------------------ARTICLES---------------------------*/
+.sustainability-section { 
+    display: flex; 
+    flex-direction: column; 
+    flex: 1; 
+}
+
+.sustainability-image { 
+    aspect-ratio: 1.03; 
+    object-fit: contain; 
+    object-position: center; 
+    width: 183px; 
+}
+
+.sustainability-content { 
+    display: flex; 
+    margin-top: 37px;
+    width: 100%; 
+    flex-direction: column; 
+    padding: 0 5px; 
+}
+
+.sustainability-header { 
+    z-index: 10; 
+    display: flex; 
+    gap: 6px; 
+    color: #282e4c; 
+    text-align: center; 
+    font: 700 18px Advercase Demo, sans-serif; 
+}
+
+@media (max-width: 991px) { 
+    .sustainability-header { white-space: normal; } }
+
+.sustainability-title { 
+    align-self: flex-start; 
+    margin-top: 18px; 
+    flex-grow: 1; }
+
+.sustainability-description { 
+    color: #434d80;
+    font: 14px/21px SeoulHangang CB, -apple-system, Roboto, Helvetica, sans-serif; }
+    
+.cta-button { 
+    align-self: stretch; 
+    border-radius: 13px; 
+    margin-top: 9px; 
+    color: #282e4c; 
+    text-align: center; 
+    padding: 4px 20px; 
+    font: 16px SeoulNamsan, sans-serif; 
+    border: 2px solid #282e4c; 
+    display: flex;
+    width: 167px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+ @media (max-width: 991px) { 
+    .cta-button { margin-right: 4px; } }
+   
+.get-involved-section { 
+    align-self: flex-end; 
+    display: flex; 
+    margin-top: 40px; 
+    flex-direction: column; 
+    flex: 1; }
+
+.get-involved-content { 
+    display: flex; 
+    width: 100%; 
+    padding-left: 10px; 
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+.get-involved-header { 
+    display: flex; 
+    gap: 5px; 
+    color: #de96ab; 
+    text-align: center; 
+    font: 700 18px Advercase Demo, sans-serif; }
+
+.get-involved-title { 
+    flex-basis: auto; 
+}
+
+.get-involved-description { 
+    color: #eab5c4; 
+    font: 14px/21px SeoulHangang CB, -apple-system, Roboto, Helvetica, sans-serif; 
+}
+
+.photo-cta-button { 
+    align-self: stretch; 
+    border-radius: 13px; 
+    margin-top: 13px; 
+    color: #de96ab; 
+    text-align: center; 
+    padding: 4px 20px; 
+    font: 16px SeoulNamsan, sans-serif; 
+    border: 2px solid #de96ab; 
+    display: flex;
+    width: 167px;
+    padding: 4px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+    .get-involved-image { 
+        aspect-ratio: 1.01; 
+        object-fit: contain;
+        object-position: center;
+        width: 169px; 
+        margin-top: 63px; 
+    }
+
+@media (max-width: 991px) { 
+    .get-involved-image { margin: 40px 8px 0 0; } }
+
+/*---------------------------BRANDS---------------------------*/
+.partners-text { 
+    text-align: center; 
+    align-self: flex-start; 
+    margin: 54px 0 0 13px; 
+    font: 18px/27px Advercase Demo, sans-serif; 
+    background: radial-gradient(50% 50% at 50% 50%, #DE96AB 0%, #3E3E53 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+@media (max-width: 991px) { 
+    .partners-text { margin: 40px 0 0 10px; } }
+
+.partners-logo { 
+    aspect-ratio: 4.63; 
+    object-fit: contain; 
+    object-position: center; 
+    width: 100%; 
+    max-width: 714px; 
+    margin-top: 67px; }
+
+ @media (max-width: 991px) { 
+    .partners-logo { margin-top: 40px; } }
+
+.footer-logo { 
+    aspect-ratio: 9.9; 
+    object-fit: contain; 
+    object-position: center; 
+    width: 100%; 
+    max-width: 1525px; 
+    align-self: flex-end; 
+    margin-top: 137px; 
+}
+
+@media (max-width: 991px) { 
+    .footer-logo { margin-top: 40px; } }
+
+.visually-hidden { 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px;
+    overflow: hidden; 
+    clip: rect(0, 0, 0, 0); 
+    white-space: nowrap; 
+    border: 0; 
+}
