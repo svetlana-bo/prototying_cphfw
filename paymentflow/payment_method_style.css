@@ -1,0 +1,65 @@
+/* Global styles */
+body {
+    font-family: SeoulNamsan, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    padding: 10px 0;
+    z-index: 100;
+}
+
+.back-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Container for the entire page */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+/* Header text styles */
+h1 {
+    width: 320px;
+    color: #272737;
+    text-align: center;
+    font-family: Advercase Demo;
+    font-size: 36px;
+    margin-bottom: 40px; /* Add space between the header and buttons */
+}
+
+/* Payment buttons container styles */
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add space between the buttons */
+    width: 264px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Payment buttons styles */
+.payment-button {
+    border-radius: 20px;
+    background: #DE96AB;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+}
