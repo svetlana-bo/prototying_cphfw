@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SeoulHangang CB";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  padding-bottom: 70px;
+}
+
+h1 {
+  color: #545766;
+  font-family: "Advercase Demo";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  position: relative;
+  z-index: 1;
+
+}
+
+h2 {
+  color: #545766;
+  font-family: "Advercase Demo";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+h3 {
+  color: #545766;
+  font-family: "Advercase Demo";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+h4 {
+  color: #545766;
+  font-family: "Advercase Demo";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: left;
+  display: inline-flex; align-items: center;
+}
+
+header {
+  background-color: #3E3E53;
+  padding: 10px;
+  height: 125px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.logo {
+  width: 33px;
+  margin-left: 14px;
+  margin-top: 8px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.login-button {
+  background-color: #de96ab;
+  border: none;
+  width: 105px;
+  padding: 4px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 10px; /* do we need?*/
+  margin-top: 11px;
+  color: #f8f7f7;
+  font: 400 16px/1.5 SeoulNamsan, sans-serif;
+  border-radius: 13px;
+
+}
+
+.login-button:active {
+  border: 2px solid #DE96AB;
+  background-color: transparent;
+  color: #DE96AB;
+}
+
+
+.search-icon {
+  width: 19.5px;
+  height: 19.5px;
+  flex-shrink: 0;
+  margin-top: 8px;
+  margin-right: 20.5px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+nav a {
+  display: flex;
+  color: #f8f7f7;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  font: 400 14px/1.5 SeoulNamsan, sans-serif;
+  letter-spacing: 0.28px;
+}
+
+nav .active {
+  color: #DE96AB;
+  border-bottom: 2px solid #DE96AB;
+}
+
+.hero {
+  background-size: auto;
+  text-align: left;
+  padding: 100px 20px 100px 30px;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+
+.get-involved,
+.sustainability {
+  display: flex;
+  padding: 0px 20px 20px 20px;
+  align-items: center;
+}
+
+.section-img {
+  width: 50%;
+  border-radius: 13px;
+}
+
+.content {
+  width: 50%;
+  padding: 20px;
+}
+
+.icon {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.take-photo-button {
+  display: flex;
+  width: 167px;
+  height: 20px;
+  border: 2px solid #DE96AB;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 13px;
+  margin: 10px 35px 10px 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #DE96AB;
+  font-family: SeoulNamsan;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  transform: translateX(-5px);
+}
+
+.take-photo-button:active {
+  background-color: #DE96AB;
+  color:#f8f7f7;
+  cursor: pointer;
+}
+
+.see-designers-button {
+  display: flex;
+  width: 167px;
+  height: 20px;
+  border: 2px solid #282E4C;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 13px;
+  margin: 10px 35px 10px 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #282E4C;
+  font-family: SeoulNamsan;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  transform: translateX(-15px); /* Placement of buttons moved closer to that of the prototype */
+
+}
+
+.see-designers-button:active {
+  background-color: #282E4C;
+  color:#f8f7f7;
+}
+
+
+.stars {
+  width: 55px;
+}
+
+/* Class created to style section */
+.partner-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 20px 20px;
+  align-items: center;
+}
+
+/* .partner-text {
+width: 374px;
+margin: 0, auto;
+text-align: center;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 27px */ 
+
+/* partner text changed to have gradient*/
+.partner-text {
+  width: 374px;
+  text-align: center;
+  background: radial-gradient(50% 50% at 50% 50%, #DE96AB 0%, #3E3E53 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Advercase Demo";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  padding: 30px 0 10px 0;
+}
+
+/* line under text added */
+.partner-line{
+  align-self: center;
+  width: 279px;
+  height: 1px;
+  background: #DE96AB;
+  margin: 5px 55px 20px;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%; /* Set the width of the visible area */
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel img {
+  height: 150px;
+  flex-shrink: 0;
+  margin-right: 10px; /* Optional spacing between images */
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 600px;
+  background-color: #3E3E53;
+  padding: 10px;
+  border-radius: 21px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.nav-item {
+  position: relative;
+  transition: transform 0.3s ease-out;
+}
+
+.nav-item img {
+  width: 24px;
+  transition: transform 0.3s ease-out;
+}
+
+.nav-item.active {
+  transform: translateY(-20px); /* Lift active icon */
+}
+
+.nav-item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); /* Start with scale of 0 */
+  width: 50px;
+  height: 50px;
+  background-color: #3E3E53; /* Circle color */
+  border-radius: 50%;
+  z-index: -1; /* Places the circle behind the icon */
+  transition: transform 2s ease-out; /* Smooth expansion */
+}
+
+.nav-item.active::before {
+  transform: translate(-50%, -50%) scale(1); /* Expands the circle smoothly */
+}
