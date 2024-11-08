@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment successful</title>
+    <link rel="stylesheet" href="payment_flow_success_style.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="icon-container">
+            <img src="/icons/success-icon.svg" class="success-icon" alt="Success Icon">
+        </div>
+        <div class="container-text">
+        <h1>Payment successful!</h1>
+        <p>Thank you for your purchase! <br> You will find your tickets in your account. We’ve also sent it to your email <insert email>. <br> If you want a copy sent to another 
+            email:</p>
+        </div>
+
+ <!-- Form -->
+<div>
+ <form id="email-form">
+        <label for="your-email">Enter your email</label>
+        <input type="email" id="your-email" name="your-email" placeholder="maxmustermann@gmail.com" pattern="^[A-Za-z\s]+$" title="Enter a valid email adress" inputmode="email" required>
+</form>
+
+<!-- Button -->
+<div> <a href="404.html" class="send-email-button">Send Email</a> </div>
+</div>
+</section>
+
+<!-- Summary -->
+<section class="order-summary">
+    <div class="summary-text">
+        <h1>Order Summary</h1>
+        <p> #813 <br> Paid 28.10.2025, 11:42 <br> Total: 669 DKK</p>
+    </div>
+
+    <div class="cart-container">
+        <div class="divider"></div>
+            <!-- Card Item -->
+            <div class="cart-item">
+                <div class="cart-item-info">
+                    <h2 class="cart-item-header">Han Kjøbenhavn</h2>
+                    <p class="cart-item-description">8 Aug 2025,  17:00 <br> Den Grå Hal <br> 370 DKK</p>
+                </div>
+                <div class="cart-item-number">
+                    <p>1x</p>
+                </div>
+            </div>   
+            
+    <div class="divider"></div>
+             <!-- Card Item -->
+            <div class="cart-item">
+                <div class="cart-item-info">
+                    <h2 class="cart-item-header">(Di) Vision</h2>
+                    <p class="cart-item-description">6 Aug 2025,  19:00 <br> Parken <br> 299 DKK</p>
+                </div>    
+                <div class="cart-item-number">
+                    <p>1x</p>
+                </div>
+            </div>
+
+    </div>
+</section>
+
+
+</body>
+</html>
