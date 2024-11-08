@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+/* Header */
+header {
+    background-color: #3E3E53;
+    padding: 10px;
+    height: 125px;
+  }
+
+    .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: 33px;
+    margin-left: 14px;
+    margin-top: 8px;
+  }
+  
+  .header-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .login-button {
+    background-color: #de96ab;
+    border: none;
+    width: 105px;
+    padding: 4px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px; /* do we need?*/
+    margin-top: 11px;
+    color: #f8f7f7;
+    font: 400 16px/1.5 SeoulNamsan, sans-serif;
+    border-radius: 13px;
+  
+  }
+  
+  .login-button:active {
+    border: 2px solid #DE96AB;
+    background-color: transparent;
+    color: #DE96AB;
+  }
+  
+  .search-icon {
+    width: 19.5px;
+    height: 19.5px;
+    flex-shrink: 0;
+    margin-top: 8px;
+    margin-right: 20.5px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+  }
+  
+  nav a {
+    display: flex;
+    color: #f8f7f7;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    font: 400 14px/1.5 SeoulNamsan, sans-serif;
+    letter-spacing: 0.28px;
+  }
+  
+  nav .active {
+    color: #DE96AB;
+    border-bottom: 2px solid #DE96AB;
+  }
+
+/* Header End */
+
+
+/* Main */
+
+.designer-container {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/Designers-forzacollective.svg);
+  width: 100%; /* Make sure it's occupying space */
+  height: 100vh; /* Set an explicit height */
+  background-size: cover;
+}
+
+  h1{
+  display: flex;
+  width: 218px;
+  height: 143px;
+  padding-bottom: 20px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: "Advercase Demo";
+  font-size: 49.665px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 74.498px */
+}
+
+.forza-article {
+  font-family: SeoulNamsan;
+  font-size: 15.9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 23.85px */
+  transform: translateY(150px);
+  padding: 0 30px 0 15px;
+  width: 30vh;
+}
+
+.line-divider {
+  width: 218px;
+  height: 2px;
+  background: #3F4878;
+  margin-top: 18px;
+}
+
+.button-forzacollective {
+  display: flex;
+  width: max-content;
+  height: max-content;
+}
+
+   /* Sticky navbar */
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px;
+    background-color: #3E3E53;
+    padding: 10px;
+    border-radius: 21px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .nav-item {
+    position: relative;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .nav-item img {
+    width: 24px;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .nav-item.active {
+    transform: translateY(-20px); /* Lift active icon */
+  }
+  
+  .nav-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Start with scale of 0 */
+    width: 50px;
+    height: 50px;
+    background-color: #3E3E53; /* Circle color */
+    border-radius: 50%;
+    z-index: -1; /* Places the circle behind the icon */
+    transition: transform 2s ease-out; /* Smooth expansion */
+  }
+  
+  .nav-item.active::before {
+    transform: translate(-50%, -50%) scale(1); /* Expands the circle smoothly */
+  }
+  

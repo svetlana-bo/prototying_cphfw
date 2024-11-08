@@ -41,7 +41,6 @@ h3 {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  text-align: center;
 }
 
 h4 {
@@ -65,12 +64,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .logo {
   width: 33px;
-  margin-left: 24px;
-  margin-top: 28px;
+  margin-left: 14px;
+  margin-top: 8px;
 }
 
 .header-icons {
@@ -87,7 +87,7 @@ header {
   align-items: center;
   gap: 10px;
   margin-right: 10px; /* do we need?*/
-  margin-top: 29px;
+  margin-top: 11px;
   color: #f8f7f7;
   font: 400 16px/1.5 SeoulNamsan, sans-serif;
   border-radius: 13px;
@@ -105,14 +105,14 @@ header {
   width: 19.5px;
   height: 19.5px;
   flex-shrink: 0;
-  margin-top: 27px;
+  margin-top: 8px;
   margin-right: 20.5px;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 nav a {
@@ -133,8 +133,8 @@ nav .active {
 
 .hero {
   background-size: auto;
-  text-align: center;
-  padding: 100px 20px;
+  text-align: left;
+  padding: 100px 20px 100px 30px;
   background-attachment: fixed;
   position: relative;
 }
@@ -153,7 +153,7 @@ nav .active {
 .get-involved,
 .sustainability {
   display: flex;
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
   align-items: center;
 }
 
@@ -173,8 +173,6 @@ nav .active {
   margin-right: 5px;
 }
 
-
-
 .take-photo-button {
   display: flex;
   width: 167px;
@@ -185,6 +183,7 @@ nav .active {
   align-items: center;
   padding: 10px 20px;
   border-radius: 13px;
+  margin: 10px 35px 10px 0;
   cursor: pointer;
   font-weight: bold;
   color: #DE96AB;
@@ -193,8 +192,7 @@ nav .active {
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
-  ma
-
+  transform: translateX(-5px);
 }
 
 .take-photo-button:active {
@@ -213,6 +211,7 @@ nav .active {
   align-items: center;
   padding: 10px 20px;
   border-radius: 13px;
+  margin: 10px 35px 10px 0;
   cursor: pointer;
   font-weight: bold;
   color: #282E4C;
@@ -221,6 +220,7 @@ nav .active {
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
+  transform: translateX(-15px); /* Placement of buttons moved closer to that of the prototype */
 
 }
 
@@ -234,18 +234,47 @@ nav .active {
   width: 55px;
 }
 
-.partner-text {
+/* Class created to style section */
+.partner-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 20px 20px;
+  align-items: center;
+}
+
+/* .partner-text {
 width: 374px;
 margin: 0, auto;
 text-align: center;
-font-family: "Advercase Demo";
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
-line-height: 150%; /* 27px */
-color: #3E3E53;
+line-height: 150%; /* 27px */ 
+
+/* partner text changed to have gradient*/
+.partner-text {
+  width: 374px;
+  text-align: center;
+  background: radial-gradient(50% 50% at 50% 50%, #DE96AB 0%, #3E3E53 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Advercase Demo";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  padding: 30px 0 10px 0;
 }
 
+/* line under text added */
+.partner-line{
+  align-self: center;
+  width: 279px;
+  height: 1px;
+  background: #DE96AB;
+  margin: 5px 55px 20px;
+}
 
 .carousel {
   overflow: hidden;
