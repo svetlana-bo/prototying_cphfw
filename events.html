@@ -1,32 +1,93 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Copenhagen Fashion Week - Events and tickets</title>
-  <link rel="stylesheet" href="css/main_style.css">
-  <link rel="javascript" href="js/javascript.js">
+  <title>Events</title>
+  <link rel="stylesheet" href="style-events.css">
 </head>
 <body>
+  <section class="events">
+    <header class="top-bar">
+        <div class="back-button" onclick="goBack()">
+            <img src="ICONS/Back Icon.png" alt="Back" />
+        </div>
+        <h1 class="title">Events</h1>
+    </header>
+    <div class="filter-icon" onclick="toggleFilterPopup()">
+        <img src="ICONS/Filter icon.png" alt="Filter" />
+    </div>
+    
+    <div class="overlay" onclick="toggleFilterPopup()"></div>
+    
+    <div class="filter-popup" id="filterPopup">
+        <label>
+            <input type="checkbox" checked> Show
+        </label>
+        <label>
+            <input type="checkbox" checked> Presentation
+        </label>
+        <button onclick="applyFilters()">Apply</button>
+    </div>
 
+    <script>
+        function goBack() {
+          window.history.back();
+        }
 
-    <div class="bottom-nav">
-        <a href="index.html" class="nav-item">
-          <img src="icons/icon-home.svg" alt="Home">
-        </a>
-        <a href="map.html" class="nav-item">
-          <img src="icons/icon-map.svg" alt="Map">
-        </a>
-        <a href="events.html" class="nav-item active">
-          <img src="icons/icon-tickets-active.svg" alt="Tickets">
-        </a>
-        <a href="calendar.html" class="nav-item">
-          <img src="icons/icon-calendar.png" alt="Calendar">
-        </a>
-        <a href="my_profile.html" class="nav-item">
-          <img src="icons/icon-my-profile.png" alt="Profile">
-        </a>
-      </div>
+        function toggleFilterPopup() {
+            const filterPopup = document.getElementById("filterPopup");
+            const overlay = document.querySelector(".overlay");
+            const isPopupVisible = filterPopup.style.display === "block";
+            
+            // Toggle display of popup and overlay
+            filterPopup.style.display = isPopupVisible ? "none" : "block";
+            overlay.style.display = isPopupVisible ? "none" : "block";
+        }
 
+        function applyFilters() {
+            alert("Filters applied!");
+            toggleFilterPopup(); // Close the popup and overlay after applying filters
+        }
+    </script>
+  </section>
 </body>
 </html>
+
+    <div class="event-day">
+      <h2>Monday, 5 August</h2>
+
+      <div class="event-card">
+        <img src="images/image 10.png" alt="Event Image">
+        <div class="event-info">
+          <div class="event-details">
+            <span class="event-time">14:00</span>
+            <h3 class="event-title">OperaSport</h3>
+            <p class="event-location">Admiralgade 26</p>
+          </div>
+          <button class="buy-ticket">Buy Ticket</button>
+        </div>
+      </div>
+      <div class="event-day">
+        <div class="event-card">
+          <img src="images/events 2.png" alt="Event Image">
+          <div class="event-info">
+            <div class="event-details">
+              <span class="event-time">15:00</span>
+              <h3 class="event-title">Forza Collective</h3>
+              <p class="event-location">Carlsberg Byen</p>
+            </div>
+            <button class="buy-ticket">Buy Ticket</button>
+          </div>
+        </div>
+      <!-- Repeat the event-card div for each event -->
+
+    </div>
+
+    <!-- Repeat the event-day section for each date -->
+
+  </section>
+</body>
+</html>
+=======
