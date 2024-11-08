@@ -1,0 +1,183 @@
+/* Custom fonts */
+@font-face {
+  font-family: 'Title-Font';
+  src: url('fonts/AdvercaseFont-Demo-Regular.otf');
+}
+@font-face {
+  font-family: 'Body-Font';
+  src: url('fonts/SeoulNamsanvert.ttf');
+}
+.overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+  z-index: 1; /* Ensure it sits above other elements */
+}
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  background-color: white;
+  font-family: 'Title-Font', sans-serif;
+}
+
+.back-button {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.filter-icon {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.filter-container {
+  position: relative;
+  margin-left: auto;
+}
+
+/* Popup styling */
+.filter-popup {
+  display: none;
+  position: absolute;
+  top: 100px; /* Adjust this value as needed */
+  right: 120px; /* Add units here */
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  z-index: 2; /* Ensure popup appears above overlay */
+}
+
+.filter-popup label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.filter-popup button {
+  background-color: #4a4461;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+/* General styling */
+body {
+  font-family: 'Body-Font', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+/* Event section */
+.events {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Title styling */
+.events h1 {
+  font-family: 'Title-Font', serif;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Event day styling */
+.event-day h2 {
+  text-align:  center;
+  font-family: 'Title-Font', sans-serif;
+  font-size: 20px;
+  color: #4a4461;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Event card styling */
+.event-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.event-info {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Body-Font', sans-serif;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-time {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.event-title {
+  font-family: 'Title-Font', serif;
+  font-size: 20px;
+  color: #333;
+  margin: 2px 0;
+}
+
+.event-location {
+  font-family: 'Body-font';
+  font-size: 20px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.buy-ticket {
+  background-color: #f3acc3;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: 'Body-Font', sans-serif;
+  display: flex;
+width: 138px;
+height: 48px;
+padding: 4px 20px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+}
