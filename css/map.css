@@ -3,7 +3,16 @@
     height: 700px;
 }
 
-
+.map-top-bar {
+    display: flex;
+    align-items: center;       /* Centers items vertically */
+    justify-content: flex-start; /* Aligns items to the left */
+    padding: 10px;              /* Optional padding for spacing */
+  }
+  
+  .back-button {
+    margin-right: 10px;         /* Adds space between the back button and heading */
+  }
 
 .custom-popup {
     width: 292px;
