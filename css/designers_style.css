@@ -90,20 +90,17 @@ header {
 
 .designer-container {
   display: flex;
-  flex-direction: column;
+  grid-template-columns: 1fr; /* 1 full row */
   width: 100vw;
   height: 100vh;
   padding-top: 125px;
-  position: relative;
   overflow: hidden;
 }
 
-
 .designer-slide {
-  display: flex;
-  flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100vh); /* Fills every grid at 100% of height */
 }
 
 .designer-article {
@@ -120,22 +117,22 @@ header {
 
 .designer1 {
   background-image: url(../images/designers-forzacollective.svg);
-  width: 100%; 
-  height: 100%;
+  width: 100vw; 
+  height: 100vh;
   background-size: cover;
 }
 
 .designer2 {
   background-image: url(../images/designers-alicek.svg);
-  width: 100%; 
-  height: 100%;
+  width: 100vw; 
+  height: 100vh;
   background-size: cover;
 }
 
 .designer3 {
   background-image: url(../images/designers-berner.svg);
-  width: 100%; 
-  height: 100%;
+  width: 100vw; 
+  height: 100vh;
   background-size: cover;
 }
 

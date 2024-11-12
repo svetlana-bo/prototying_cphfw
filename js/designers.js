@@ -9,6 +9,7 @@ let counter = 1;
 const size = designerImages[0].clientHeight; 
 
 designerSlide.style.transform = 'translateY(' + (-size * counter) + 'px)';
+/* CSS is string only therefore needs ' */
 
 //listeners
 dragbtns.forEach(dragbtn => {
@@ -31,6 +32,12 @@ designerSlide.addEventListener('transitionend', () => {
         counter = designerImages.length - counter;
         designerSlide.style.transform = 'translateY(' + (-size * counter) + 'px)';
     }
+});
+
+/* Making height responsive - Function is called every time window is resized */
+window.addEventListener('resize', () => {
+    const newSize = window.innerHeight;
+    designerSlide.style.transform = 'translateY(' + (-newSize * counter) + 'px)';
 });
 
 /* const designerSlide = document.querySelector('.designer-slide');
