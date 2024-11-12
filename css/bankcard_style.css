@@ -59,7 +59,7 @@ body {
 
 .card-image img {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     margin: 0 auto 30px;
     display: block;
 }
@@ -181,7 +181,7 @@ button {
 
 /* Cancel Button */
 button[type="cancel"] {
-    background-color: #ffffff;
+    background-color: white;
     color: #282E4C;
     text-align: center;
     font-family: SeoulNamsan;

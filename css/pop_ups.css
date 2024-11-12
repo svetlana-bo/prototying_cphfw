@@ -1,0 +1,238 @@
+/* --------------------------FOR ALL POPUPS-------------------------------- */
+/* General popup container style (overlay) */
+  .popup-container {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+  
+  /* Popup content style */
+.popup-content {
+  width: 100%; /* Updated: takes full width of popup container */
+  max-width: 500px;
+  padding: 20px;
+  color: #272737;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("/images/gradient3.svg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+  
+  /* Popup title and paragraph */
+  .popup-title {
+    font-family: SeoulNamsanEB;
+    font-size: 20px;
+    margin: 0 0 10px;
+  }
+  
+  .popup-paragraph {
+    font-family: SeoulNamsan;
+    font-size: 16px;
+    margin: 0 0 20px;
+  }
+  
+/* --------------------------SPECIFIC POPUPS-------------------------------- */
+
+/* Cancel Confirmation Popup & Save Picture Popups */
+
+  /* Popup buttons */
+  .popup-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+
+  .popup-buttons button {
+    padding: 10px 20px;
+    width: 40%;
+    height: 47px;
+    font-size: 20px;
+    text-align: center;
+    font-family: SeoulNamsan;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Cancel Confirmation Popup*/
+  /* specific Popup buttons */
+  .yes-button {
+    border-radius: 20px;
+    border: 2px solid #282E4C;
+    background-color: transparent; /* Make the background transparent */
+    color: #282E4C; /* Set the text color to match the border */
+}
+  
+  .no-button {
+    border-radius: 20px;
+    border: 2px solid #282E4C;
+    background: #282E4C;
+    color: #F8F7F7;
+  }
+  
+  .yes-button:hover {
+    background-color: #f4f4f44d;
+    color: #000;
+    transform: scale(1.05); /* Slightly enlarge the button */
+  }
+  
+  .no-button:hover {
+    background-color: #3a3f63;
+    transform: scale(1.05); /* Slightly enlarges the button */
+  }
+
+/* Tickets sent & Bookmark Popup*/
+  /* Star decoration */
+.star {
+    position: absolute;
+    top: 85%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to exactly center */
+    z-index: 10; /* Ensure it's on top of other content */
+}
+
+.star img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain; /* Ensures the image is contained properly within its container */
+}
+
+/* Bookmark Popup Popup*/
+/* specific Popup button */
+.view-favourites-button {
+  color: #272737;
+  text-align: center;
+  font-family: SeoulNamsan;
+  font-size: 20px;
+  font-style: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  cursor: pointer;
+}
+
+/* Added-to-Cart Popup*/
+/* Popup buttons (different layout) */
+.popup-buttons-cart-edition {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Space between buttons */
+  align-items: center; /* Center the buttons horizontally */
+  margin-bottom: 40px;
+}
+
+.popup-buttons-cart {
+  border-radius: 20px;
+  background: #282E4C;
+  color: #f4f4f4;
+  height: 47px;
+  width: 80%;
+  font-size: 20px;
+  text-align: center;
+  font-family: SeoulNamsan;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.popup-buttons-cart:hover{
+    background-color: #3a3f63;
+    transform: scale(1.05); /* Slightly enlarges the button */
+  }
+
+  /* star decoration */
+.two-stars {
+  position: absolute;
+}
+
+.two-stars img {
+  width: 30px;
+  height: 30px;
+}
+
+
+#stars1 {
+  top: 5%;
+  left: 5%;
+}
+
+#stars2 {
+  top: 85%;
+  left: 85%;
+}
+
+/* Save-picture (to gallery and profile) Popup*/
+/* Popup Buttons*/
+.save-button {
+  border-radius: 20px;
+  border: 2px solid #282E4C;
+  background: #282E4C;
+  color: #F8F7F7;
+}
+
+.save-not-button {
+  border-radius: 20px;
+  border: 2px solid #282E4C;
+  background: #282E4C;
+  color: #F8F7F7;
+}
+
+.save-button:hover {
+  background-color: #3a3f63;
+  transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+.save-not-button:hover {
+  background-color: #3a3f63;
+  transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+/* Password Request Popup*/
+/* Popup Home Button*/
+.back-to-home-button {
+  color: #272737;
+  text-align: center;
+  font-family: SeoulNamsan;
+  font-size: 20px;
+  font-style: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  cursor: pointer;
+}
+
+/* Button container */
+.popup-button-inbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* Check Inbox Button */
+.check-inbox-button {
+  width: 100%; /* Take full width */
+  max-width: none; /* Remove max-width to avoid limiting width */
+  border-radius: 20px;
+  border: 2px solid #282E4C;
+  background: #282E4C;
+  color: #F8F7F7;
+  padding: 15px 0;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.check-inbox-button:hover {
+  background-color: #3a3f63;
+  transform: scale(1.05);
+}
