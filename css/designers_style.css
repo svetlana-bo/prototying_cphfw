@@ -9,7 +9,7 @@ header {
     background-color: #3E3E53;
     padding: 10px;
     height: 125px;
-    width: 390px;
+    width: 100%;
     position: fixed;
     z-index: 1;
   }
@@ -91,18 +91,52 @@ header {
 .designer-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   padding-top: 125px;
   position: relative;
   overflow: hidden;
 }
 
+
 .designer-slide {
   display: flex;
   flex-direction: column;
-  width: 390px;
-  height: 844px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.designer-article {
+  font-family: SeoulNamsan;
+  font-size: 15.9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 23.85px */
+  color: #3F4878;
+  width:100vw;
+  height: 100vh;
+  align-items: center;
+}
+
+.designer1 {
+  background-image: url(../images/designers-forzacollective.svg);
+  width: 100%; 
+  height: 100%;
+  background-size: cover;
+}
+
+.designer2 {
+  background-image: url(../images/designers-alicek.svg);
+  width: 100%; 
+  height: 100%;
+  background-size: cover;
+}
+
+.designer3 {
+  background-image: url(../images/designers-berner.svg);
+  width: 100%; 
+  height: 100%;
+  background-size: cover;
 }
 
 .star-container {
@@ -126,18 +160,6 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 74.498px */
-}
-
-.designer-article {
-  font-family: SeoulNamsan;
-  font-size: 15.9px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 23.85px */
-  color: #3F4878;
-  transform: translateY(0); /* translation moved from 120px to 0 as test */
-  padding: 100px 30px 242px 15px;
-  width: 30vh;
 }
 
 .line-divider {
@@ -197,30 +219,9 @@ header {
   text-underline-position: from-font;
 }
 
-.designer1 {
-  background-image: url(../images/designers-forzacollective.svg);
-  width: 100%; /* Make sure it's occupying space */
-  height: 844px; /* Set an explicit height */
-  background-size: cover;
-}
-
-.designer2 {
-  background-image: url(../images/designers-alicek.svg);
-  width: 100%; /* Make sure it's occupying space */
-  height: 844px; /* Set an explicit height */
-  background-size: cover;
-}
-
-.designer3 {
-  background-image: url(../images/designers-berner.svg);
-  width: 100%; /* Make sure it's occupying space */
-  height: 844px; /* Set an explicit height */
-  background-size: cover;
-}
-
-
    /* Sticky navbar */
   .bottom-nav {
+    box-sizing: border-box;
     position: fixed;
     bottom: 0;
     left: 50%;
@@ -268,4 +269,18 @@ header {
   .nav-item.active::before {
     transform: translate(-50%, -50%) scale(1); /* Expands the circle smoothly */
   }
+
+  /* Media queries */
+@media screen and (min-width: 390px) {
+  .bottom-nav {
+    max-width: 1080px;
+  }
+
+  .designer-article {
+    max-width: 250px
+  }
+}
+
+
+
   
