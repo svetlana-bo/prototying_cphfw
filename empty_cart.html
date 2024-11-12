@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="css/empty_cart_style.css">
+</head>
+
+<body>
+    <!--Back Button-->
+    <header>
+        <div class="back-icon" onclick="goBack()">
+            <img src="icons/icon-back.svg" alt="Back Icon">
+        </div>
+    </header>
+    
+      <!--Heading and Oh no text-->
+    <h1 class="cart-header">Your Cart</h1> 
+    <div class="container">
+        <img src="icons/sad-shopping-cart.svg" class="cart-icon" alt="Sad Cart Icon">
+    <p>Oh no, your cart is empty.</p>
+    </div>
+    
+    <!-- Explore now button -->
+    <a href="events.html" class="explore-button">Explore now</a>
+
+    <!--Star Decoration-->
+    <div class="star" id="star1">
+        <img src="/icons/one-star-pink.svg" alt="One Star Icon">
+    </div>
+
+
+    <!--Navigation Bar-->
+    <div class="bottom-nav">
+        <a href="index.html" class="nav-item">
+          <img src="icons/icon-home.svg" alt="Home">
+        </a>
+        <a href="map.html" class="nav-item">
+          <img src="icons/icon-map.svg" alt="Map">
+        </a>
+        <a href="events.html" class="nav-item  active">
+          <img src="icons/icon-tickets-active.svg" alt="Tickets">
+        </a>
+        <a href="calendar.html" class="nav-item">
+          <img src="icons/icon-calendar.svg" alt="Calendar">
+        </a>
+        <a href="my_profile.html" class="nav-item">
+          <img src="icons/icon-my-profile.svg" alt="Profile">
+        </a>
+      </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="js/javascript_cart.js"></script>
+</body>
+</html>

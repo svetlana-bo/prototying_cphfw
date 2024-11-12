@@ -4,27 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Method</title>
-    <link rel="stylesheet" href="payment_method_style.css">
+    <link rel="stylesheet" href="/css/payment_method_style.css">
 </head>
 
+<body>
     <header>
         <div class="back-icon" onclick="goBack()">
             <img src="/icons/icon-back.svg" alt="Back Icon">
         </div>
     </header>
 
-<body>
+
     <section class="container">
         <h1>Choose a Payment Method</h1>
     
         <!-- Payment Options -->
         <div class="payment-options">
-            <a href="404.html" class="payment-button" id="mobile-pay">Mobile Pay</a>
+            <a href="/404.html" class="payment-button" id="mobile-pay">Mobile Pay</a>
             <a href="payment_flow_bankcard.html" class="payment-button" id="credit-card">Pay by Card</a>
-            <a href="404.html" class="payment-button" id="pay-pal">PayPal</a>
+            <a href="/404.html" class="payment-button" id="pay-pal">PayPal</a>
         </div>
     </section>
 
-    <script src="payment_flow_script.js"></script>
+    <!-- Stars -->
+    <div class="star" id="star1">
+        <img src="/icons/two-stars-blue.svg" alt="Two Stars Icon">
+    </div>
+    <div class="star" id="star2">
+        <img src="/icons/two-stars-blue.svg" alt="Two Stars Icon">
+    </div>
+
+    
+
+
+    <script src="/js/payment_flow_script.js"></script>
 </body>
 </html>

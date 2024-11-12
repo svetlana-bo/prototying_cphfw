@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank Details</title>
-    <link rel="stylesheet" href="bankcard_style.css">
+    <link rel="stylesheet" href="/css/bankcard_style.css">
 </head>
 
 <body>
@@ -47,10 +47,12 @@
                 </div>
                 <div class="form-group cvv-group">
                     <label for="cvv">CVV</label>
-                    <input type="password" id="cvv" name="cvv" placeholder="***" pattern="\d{3}" title="CVV must be 3 digits" inputmode="numeric" maxlength="3" required>
-                    <span class="eye-icon" onclick="toggleCVV()">
-                        <img src="/icons/icon-eye-open.svg" alt="Open Eye Icon" id="eye-icon-img"> <!-- Your custom icon here -->
-                    </span>
+                        <div class="input-and-icon">
+                            <input type="password" id="cvv" name="cvv" placeholder="***" pattern="\d{3}" title="CVV must be 3 digits" inputmode="numeric" maxlength="3" required>
+                            <span class="eye-icon" onclick="toggleCVV()">
+                                <img src="/icons/icon-eye-open.svg" alt="Open Eye Icon" id="eye-icon-img"> <!-- Your custom icon here -->
+                            </span>
+                        </div>
                 </div>
             </div>
         </form>
@@ -62,7 +64,7 @@
         </div>
     </div>
 
-    <script src="payment_flow_script.js"></script>
+    <script src="/js/payment_flow_script.js"></script>
 </body>
 </html>
 

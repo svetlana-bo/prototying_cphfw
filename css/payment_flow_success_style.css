@@ -1,0 +1,227 @@
+/* back icon */
+.back-icon {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+/* Global Styles */
+body {
+    font-family: SeoulNamsan, sans-serif;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main content */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    margin-top: 20px; 
+}
+
+.success-icon {
+    display: block;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0; 
+}
+
+.container-text {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #272737;
+    text-align: center;
+    font-family: Advercase Demo;
+    font-size: 20px;
+    margin-top: 80px;
+}
+
+.container p {
+    color: #272737;
+    text-align: center;
+    font-family: SeoulHangang CB;
+    font-size: 20px;
+}
+
+/* email form */
+form {
+    margin-top: 80px;
+}
+
+
+/* Email Form Wrapper for Input and Button */
+.email-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+/* Input Field */
+#your-email {
+    width: 100%;
+    padding: 12px 17px;
+    box-sizing: border-box;
+    height: 40px;
+    border: 2px solid #282E4C;
+    border-radius: 20px;
+    color: #272737;
+    font-family: SeoulHangang CB;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Button */
+.send-email-button {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background: #282E4C;
+    color: #F8F7F7;
+    font-family: SeoulNamsan;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+}
+/* Hover effect */
+.send-email-button:hover {
+    background-color: #3a3f63;
+    transform: scale(1.05);
+}
+
+/*  Order Summary */
+.summary-text {
+    color: #272737;
+    text-align: right;
+    font-family: SeoulHangang CB;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+/* Event cards that got purchased */
+.cart-container {
+    margin: 0px 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+.cart-item-info {
+    flex: 1; /* Allows the item info to take available space */
+}
+
+
+.cart-item-header {
+    color: #272737;
+    font-family: Advercase Demo;
+    font-size: 16px;
+}
+
+.cart-item-description {
+    color: #272737;
+    font-family: SeoulHangang CB;
+    font-size: 16px;
+}
+
+.cart-item-number {
+    color: #272737;
+    font-family: SeoulHangang CB;
+    font-size: 14px;
+    text-align: right;
+    flex-shrink: 0; /* Prevents the cart-item-number from shrinking */
+}
+
+/* divider line */
+.divider {
+    border-top: 1px solid #5966AA;
+    margin: 15px;
+    height: 1px;
+    width: 90%;
+}
+
+/* navigation bar */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px;
+    background-color: #3E3E53;
+    padding: 10px;
+    border-radius: 21px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .nav-item {
+    position: relative;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .nav-item img {
+    width: 24px;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .nav-item.active {
+    transform: translateY(-20px); /* Lift active icon */
+  }
+  
+  .nav-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Start with scale of 0 */
+    width: 50px;
+    height: 50px;
+    background-color: #3E3E53; /* Circle color */
+    border-radius: 50%;
+    z-index: -1; /* Places the circle behind the icon */
+    transition: transform 2s ease-out; /* Smooth expansion */
+  }
+  
+  .nav-item.active::before {
+    transform: translate(-50%, -50%) scale(1); /* Expands the circle smoothly */
+  }

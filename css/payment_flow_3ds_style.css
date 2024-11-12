@@ -1,0 +1,103 @@
+/* back icon */
+.back-icon {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+/* general */
+body {
+    font-family: SeoulNamsan, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+/* main content */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;  /* Stack the items vertically */
+}
+
+.container-text {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.container h1 {
+    color: #272737;
+    text-align: center;
+    font-family: SeoulNamsan;
+    font-size: 20px;
+}
+
+.container p {
+    color: #272737;
+    text-align: center;
+    font-family: SeoulNamsan;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+}
+
+.checkout-image {
+    width: 100%; 
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* button */
+.confirm-button {
+    padding: 15px 80px;
+    border-radius: 20px;
+    font-size: 16px;
+    border: 2px solid #282E4C;
+    background-color: #282E4C;
+    color: white;
+    text-align: center;
+    font-family: SeoulNamsan;
+    text-decoration: none;
+    width: auto;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Make sure the <a> inside the confirm-button div inherits white text color */
+.confirm-button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Optional: Hover effect for the button */
+.confirm-button:hover {
+    background-color: #3a3f63;
+    border-color: #3a3f63;
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
