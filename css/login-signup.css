@@ -1,0 +1,106 @@
+.back-icon {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center;     /* Centers children horizontally within the container */
+    height: 100vh; /* Full viewport height */  
+    margin-top: 137px;
+}
+
+.login-container h1 {
+color: #282E4C;
+text-align: center;
+font-family: "Advercase Demo";
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; /* 54px */
+}
+
+.login-container p {
+    color:#434D80;
+text-align: center;
+font-family: SeoulNamsan;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+}
+
+.login-form-group {
+    color: #B27889;
+    font-family: SeoulNamsan;
+    font-size: 14px;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Input Fields */
+input[type="email"], input[type="password"] {
+    width: 176px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: SeoulNamsan;
+    font-size: 14px;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #B27889;
+    outline: none;
+}
+
+#password, #email {
+    width: 322px;
+    display: flex;
+    padding: 12px 17px 11px 17px;
+    justify-content: center;
+    align-items: center;
+    height: 57px;
+    border: 2px solid #B27889;
+    border-radius: 20px;
+}
+
+.eye-icon {
+    position: absolute;
+    bottom: -3px;
+    right: 5px;
+    transform: translateY(-50%);
+}
+
+/* Buttons */
+button {
+    width: 322px;
+    height: 42px;
+    border-radius: 13px;
+    font-size: 16px;
+    border: 2px solid #282E4C;
+    margin-top: 36px;
+}
+
+/* Confirm Button */
+button[type="confirm"] {
+    background-color: #282E4C;
+    color: white;
+    text-align: center;
+    font-family: SeoulNamsan;
+}
+
+.main-wrapper {
+    display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px 20px 20px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="/paymentflow/bankcard_style.css"> -->
+  <link rel="stylesheet" href="/css/login-signup.css">
+  <link rel="stylesheet" href="/css/main_style.css">
+  <title>Copenhagen Fashion Week - Login</title>
+  <script src="js/javascript.js"></script>
+  <script src="js/login_signup.js"></script>
+</head>
+<body>
+
+  <div class="back-icon" onclick="goBack()">
+    <img src="/icons/icon-back.svg" alt="Back Icon">
+</div>
+
+  <!-- Login Form Container -->
+  <div class="login-container">
+
+    <!-- Login Title with Icon Decorations -->
+    <h1>Log in</h1>
+    <p style="margin-top: 13px;">Don’t have an account? <a style="color: inherit;" href="sign_up.html">Sign up</a></p>
+
+
+    <form id="login-form">
+  
+          <div class="login-form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" title="Enter a valid email" inputmode="email" required>
+          </div>
+
+          <div class="login-form-group">
+            <label for="password">Password</label>
+            <div class="password-container">
+              <input type="password" id="password" name="password" placeholder="*******" required>
+              <span class="eye-icon" onclick="toggleEyeIcon()">
+                <img src="/icons/icon-eye-closed.svg" alt="Open Eye Icon" id="eye-icon-img">
+              </span>
+            </div>
+          </div>
+          
+   </form>
+
+  
+      <!-- Log in Button -->
+      <button type="confirm">Log in</button>
+
+      <!-- Forgot Password Link -->
+      <p style="margin-top: 50px;"><a style="color: inherit;"  href="404.html">Forgot password?</a></p>
+
+      <!-- Terms and Policy Agreement -->
+      <p style="margin-top: 50px;">
+        By logging in, you agree to <br> the <a style="color: inherit;"  href="404.html">Terms of Service</a> and <a style="color: inherit;"  href="404.html">Privacy Policy</a>
+      </p>
+
+      <!-- Confirmation Icon -->
+      <div class="confirmation-icon">
+        <img src="../icons/icon-check1.svg" alt="Confirmation">
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>
+
+   
