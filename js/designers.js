@@ -9,7 +9,7 @@ let counter = 1;
 const size = designerImages[0].clientHeight; 
 
 designerSlide.style.transform = 'translateY(' + (-size * counter) + 'px)';
-/* CSS is string only therefore needs ' */
+/* CSS is string only therefore needs (-size * counter) must be turned into a string */
 
 //listeners
 dragbtns.forEach(dragbtn => {
