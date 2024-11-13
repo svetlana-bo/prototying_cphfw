@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank Details</title>
-    <link rel="stylesheet" href="bankcard_style.css">
+    <link rel="stylesheet" href="../css/bankcard_style.css">
+<!-- Include pop-up CSS for Pop Up styling -->
+    <link rel="stylesheet" href="../css/pop_ups.css">
 </head>
 
 <body>
     <header>
+        <!--Back Button-->
         <div class="back-icon" onclick="goBack()">
-            <img src="/icons/icon-back.svg" alt="Back Icon">
+            <img src="../icons/icon-back.svg" alt="Back Icon">
         </div>
     </header>
 
+    <!--Heading and fill in request-->
     <div class="container">
         <div class="container-text">
             <h1>Bank Details</h1>
@@ -22,7 +26,7 @@
 
         <!-- Card Image -->
         <div class="card-image">
-            <img src="/images/bankcard.svg" alt="Credit Card">
+            <img src="../images/bankcard.svg" alt="Credit Card">
         </div>
 
         <!-- Form -->
@@ -35,7 +39,7 @@
                 </div>
                 <div class="form-group">
                     <label for="expiration-date">Expiration Date</label>
-                    <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/\d{2}$" title="Enter a valid date (MM/YY)" inputmode="numeric" required>
+                    <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/\d{2}$" title="Enter a valid date (MM/YY)" inputmode="numeric" maxlength="5" required oninput="formatExpirationDate(this)">
                 </div>
             </div>
 
@@ -43,25 +47,66 @@
             <div class="form-row">
                 <div class="form-group">
                     <label for="card-number">Card Number</label>
-                    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" pattern="\d{16}" title="Card number must be 16 digits" inputmode="numeric" required>
+                    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" pattern="\d{16}" title="Card number must be 16 digits" inputmode="numeric" required oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 16)"> <!-- oninput makes sure that the input is only numbers-->
                 </div>
                 <div class="form-group cvv-group">
                     <label for="cvv">CVV</label>
-                    <input type="password" id="cvv" name="cvv" placeholder="***" pattern="\d{3}" title="CVV must be 3 digits" inputmode="numeric" maxlength="3" required>
-                    <span class="eye-icon" onclick="toggleCVV()">
-                        <img src="/icons/icon-eye-open.svg" alt="Open Eye Icon" id="eye-icon-img">
-                    </span>
+                        <div class="input-and-icon">
+                            <!--Eye Icon that changes when it is clicked & hides information-->
+                            <input type="password" id="cvv" name="cvv" placeholder="***" pattern="\d{3}" title="CVV must be 3 digits" inputmode="numeric" maxlength="3" required>
+                            <span class="eye-icon" onclick="toggleCVV()">
+                                <img src="../icons/icon-eye-open.svg" alt="Open Eye Icon" id="eye-icon-img"> <!-- Your custom icon here -->
+                            </span>
+                        </div>
                 </div>
             </div>
         </form>
 
         <!-- Button Row: Cancel and Submit -->
-        <div class="form-row buttons">
-            <button type="cancel" onclick="window.location.href='cart.html'">Cancel</button>
+        <div class="form-row-buttons">
+            <button type="button" onclick="cancelAction(event)">Cancel</button>
             <button type="confirm" onclick="window.location.href='payment_flow_3ds.html'">Confirm</button>
         </div>
     </div>
 
-    <script src="payment_flow_script.js"></script>
+    <!-- Cancel Confirmation Popup -->
+<div class="popup-container" id="cancel-confirmation" onclick="closePopup(event, 'cancel-confirmation')">
+    <div class="popup-content" onclick="event.stopPropagation()">
+      <h2 class="popup-title">Confirm Cancellation</h2>
+      <p class="popup-paragraph">Are you sure you want to cancel your order?</p>
+      <div class="popup-buttons">
+        <button class="yes-button" onclick="confirmCancellation()">Yes</button>
+        <button class="no-button" onclick="directClosePopup('cancel-confirmation')">No</button>
+      </div>
+    </div>
+  </div>
+
+    <script src="../js/payment_flow_script.js"></script>
+    <!-- Include pop-up JavaScript for functionality -->
+    <script src="../js/pop_ups.js" defer></script>
+
 </body>
 </html>
+
+
+
+
+<!--Expiration Date with Month and Year Picker
+
+HTML
+<div class="form-group">
+    <label for="expiration-date">Expiration Date</label>
+    <input type="month" id="expiration-date" name="expiration-date" required>
+</div>
+
+<script>
+document.getElementById("expiration-date").addEventListener("change", function() {
+    const dateValue = this.value; // Format: YYYY-MM
+    const [year, month] = dateValue.split('-');
+    const formattedDate = month + '/' + year.substring(2); // Convert to MM/YY
+    console.log("Formatted Expiration Date:", formattedDate);
+    // You can now use the formattedDate as needed
+});
+</script>
+
+-->

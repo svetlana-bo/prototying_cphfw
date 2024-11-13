@@ -1,0 +1,73 @@
+/* back icon */
+
+.back-icon {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+/* general */
+body {
+    font-family: SeoulNamsan, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    color: #272737;
+    
+    /* Background Image with transparency */
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("images/gradient2.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* main content */
+.header-container,
+.gif-container,
+.error-info,
+.button-container {
+    width: 100%;
+    max-width: 500px; /* Adjust width as needed */
+    margin-bottom: 20px; /* Space between sections */
+}
+
+h1 {
+    font-family: Advercase Demo;
+    font-size: 36px;
+}
+
+h2 {
+    font-family: Advercase Demo;
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+    margin: 15px;
+}
+
+.search-tips-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+/* button */
+.home-button {
+    color: #272737;
+    font-size: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}

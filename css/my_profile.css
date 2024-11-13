@@ -1,0 +1,117 @@
+.top-background {
+  background-image: url(../images/gradient2.png);
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent color */
+  background-blend-mode: overlay;
+  background-position: right bottom;
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover;
+
+}
+
+.my-profile-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;            /* Centers items vertically */
+    padding:5% 5%;  
+    background-color: transparent;
+}
+
+
+.user-section {
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px 20px 20px;  
+}
+
+
+.profile-pic {
+  border-radius: 50%;        /* Makes the container elliptical */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f7f7;
+  width: max-content;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.profile-login-button {
+  margin-top: none; 
+  background-color: #5966AA;
+  border: none;
+  width: 105px;
+  padding: 4px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #f8f7f7;
+  font: 400 16px/1.5 SeoulNamsan, sans-serif;
+  border-radius: 13px;
+
+}
+
+.profile-login-button:active {
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+
+
+/* Tabs container spans full width */
+.tabs {
+  display: flex;
+  width: 100vw; /* Full viewport width */
+}
+
+/* Each tab takes up half the width */
+.tab-link {
+  width: 50%;               /* Each tab takes up half of the viewport width */
+  padding: 15px 0;          /* Adjust padding for better height */
+  border: none;
+  background-color: #f8f7f7;
+  color: #282e4c;
+  font: 400 16px/1.5 SeoulNamsan, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;       /* Center-align text inside each tab */
+}
+
+/* Active tab styling */
+.tab-link.active {
+  background-color: #282e4c;
+  color: #f8f7f7;
+  text-decoration: underline;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Styling for tab content */
+.tab-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "SeoulHangang CB";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  padding-top: 100px;
+}
+
+/* Purchase button styling */
+.purchase-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #282e4c;
+  color: #f8f7f7;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.purchase-button:active {
+  transform: scale(1.05); /* Slightly enlarge the button */
+}

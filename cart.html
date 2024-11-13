@@ -4,72 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Cart</title>
-    <link rel="stylesheet" href="cart_style.css">
-    
+    <link rel="stylesheet" href="css/cart_style.css">
 </head>
 
-<header>
-<div class="back-icon" onclick="goBack()" img src="icons/icon-back.svg" alt="Back Icon">
-  </div>
-</header>
-
 <body>
+        <!--Back Button-->
+    <header>
+        <div class="back-icon" onclick="goBack()">
+            <img src="icons/icon-back.svg" alt="Back Icon">
+        </div>
+    </header>
 
+        <!--Heading-->
     <h1 class="cart-header">Your Cart</h1> 
 
     <section>
-    <div class="cart-container">
-        <!-- Card Item -->
-        <div class="cart-item">
-            <img src="images/Han Kjobenhavn.svg" class="cart-item-image" alt="Event 1">
-            <div class="cart-item-info">
-                <div class="header-trash">
-                    <h2 class="cart-item-header">Han Kjøbenhavn</h2>
-                    <img src="icons/icon-trash.svg" class="icon-trash" alt="Trash Icon">
+        <div class="cart-container">
+            <!-- Divider -->
+            <div class="divider"></div>
+            <!-- First Cart Item -->
+            <div class="cart-item">
+                <img src="images/Han Kjobenhavn.svg" class="cart-item-image" alt="Event 1">
+                <div class="cart-item-info">
+                    <div class="header-trash">
+                        <h2 class="cart-item-header">Han Kjøbenhavn</h2>
+                        <img src="icons/icon-trash.svg" class="icon-trash" alt="Trash Icon">
+                    </div>
+                    <p class="cart-item-description">8 Aug 2025, 17:00 <br> Den Grå Hal</p>
+                    <div class="price-counter">
+                        <span class="cart-item-price">370 DKK</span>
+                        <div class="counter">
+                            <span class="counter-button decrease">-</span>
+                            <span class="counter-value">1</span>
+                            <span class="counter-button increase">+</span>
+                        </div>
+                    </div>
                 </div>
-                <p class="cart-item-description">8 Aug 2025,  17:00 <br> Den Grå Hal <br> 370 DKK</p>
-                <div class="counter">
-                    <span class="counter-button decrease">-</span>
-                    <span class="counter-value">1</span>
-                    <span class="counter-button increase">+</span>
+            </div>
+
+            <!-- Divider -->
+            <div class="divider"></div>
+
+            <!-- Second Cart Item -->
+            <div class="cart-item">
+                <img src="images/Division.svg" class="cart-item-image" alt="Event 2">
+                <div class="cart-item-info">
+                    <div class="header-trash">
+                        <h2 class="cart-item-header">(Di) Vision</h2>
+                        <img src="icons/icon-trash.svg" class="icon-trash" alt="Trash Icon">
+                    </div>
+                    <p class="cart-item-description">6 Aug 2025, 19:00 <br> Parken</p>
+                    <div class="price-counter">
+                        <span class="cart-item-price">299 DKK</span>
+                        <div class="counter">
+                            <span class="counter-button decrease">-</span>
+                            <span class="counter-value">1</span>
+                            <span class="counter-button increase">+</span>
+                        </div>
+                    </div>
                 </div>
-            </div>    
+            </div>
+            <!-- Divider -->
+            <div class="divider"></div>
         </div>
-        
-        <div class="divider"></div>
-         <!-- Card Item -->
-        <div class="cart-item">
-            <img src="images/Division.svg" class="cart-item-image" alt="Event 2">
-            <div class="cart-item-info">
-                <div class="header-trash">
-                    <h2 class="cart-item-header">(Di) Vision</h2>
-                    <img src="icons/icon-trash.svg" class="icon-trash" alt="Trash Icon">
-                </div>
-                <p class="cart-item-description">6 Aug 2025,  19:00 <br> Parken <br> 299 DKK</p>
-                <div class="counter">
-                    <span class="counter-button decrease">-</span>
-                    <span class="counter-value">1</span>
-                    <span class="counter-button increase">+</span>
-                </div>
-            </div>    
-        </div>
-        <div class="divider"></div>
-    </div>
+
     </section>
 
-        <!-- Total sum -->
-        <div class="total-sum">Total: 669 DKK</div>
+    <!-- Total sum -->
+    <div class="total-sum"><p id="total-sum-number">Total: 669 DKK</p></div>
 
-        <!-- Go to Payment button -->
-        <a href="paymentflow/payment_flow_method.html" class="payment-button">Go to Payment</a>
+    <!-- Go to Payment button -->
+    <a href="paymentflow/payment_flow_method.html" class="payment-button">Go to Payment</a>
 
-        <!-- Confirmation message -->
-        <p class="confirmation-message">The tickets will be added to your account and sent to your email</p>
+    <!-- Confirmation message -->
+    <p class="confirmation-message">The tickets will be added to your account and sent to your email</p>
+
+    <!--Stars-->
+    <div class="star" id="star1">
+        <img src="/icons/one-star-pink.svg" alt="One Star Icon">
     </div>
 
+    <!--Navigation Bar-->
+    <div class="bottom-nav">
+        <a href="index.html" class="nav-item">
+          <img src="icons/icon-home.svg" alt="Home">
+        </a>
+        <a href="map.html" class="nav-item">
+          <img src="icons/icon-map.svg" alt="Map">
+        </a>
+        <a href="events.html" class="nav-item  active">
+          <img src="icons/icon-tickets-active.svg" alt="Tickets">
+        </a>
+        <a href="calendar.html" class="nav-item">
+          <img src="icons/icon-calendar.svg" alt="Calendar">
+        </a>
+        <a href="my_profile.html" class="nav-item">
+          <img src="icons/icon-my-profile.svg" alt="Profile">
+        </a>
+      </div>
 
-<!-- Link to the external JavaScript file -->
-<script src="js/javascript_cart.js"></script>
 
+    <!-- Link to the external JavaScript file -->
+    <script src="js/javascript_cart.js"></script>
 </body>
 </html>
