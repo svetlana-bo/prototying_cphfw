@@ -1,0 +1,267 @@
+/* back icon */
+        .back-icon {
+            display: flex;
+            width: 20px;
+            height: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+        }
+/* general */
+        body {
+            font-family: SeoulNamsan, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 20px;
+        }
+/* main content */
+        .cart-header {
+            font-family: Advercase Demo, sans-serif;
+            font-size: 36px;
+            color: #282E4C;
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .divider {
+            border-top: 1px solid #5966AA;
+            margin: 15px 0;
+            height: 1px;
+            width: 90%;
+        }
+
+
+        .cart-container {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            padding: 20px;
+        }
+/* the event cards that are in the cart */
+        .cart-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            flex-direction: row; /* Default to row for larger screens */
+            flex-wrap: nowrap; /* Prevent items from wrapping onto the next line */
+        }
+
+        
+ 
+        .cart-item-image {
+            width: 100px; /* Keep image size consistent */
+            height: auto;
+            max-width: 100px; /* Prevent the image from becoming too large */
+            border-radius: 8px;
+        }
+
+        .cart-item-info {
+            margin-left: 15px;
+            flex: 1; /* Make sure it uses available space */
+        }
+      
+
+        .cart-item-header {
+            font-family: Advercase Demo, sans-serif;
+            font-size: 18px;
+            margin: 0;
+            color: #282E4C;
+        }
+
+        .icon-trash {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            margin-right: 18%;
+        }
+
+/* Align header and trash icon */
+        .header-trash {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .cart-item-description {
+            font-family: SeoulNamsan, sans-serif;
+            font-size: 16px;
+            margin: 5px 0;
+            color: #282E4C;
+        }
+
+/* Price and counter container */
+        .price-counter {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .cart-item-price {
+            font-size: 16px;
+            color: #282E4C;
+            margin-right: auto; /* Pushes the price to the left within the .price-counter container */
+            font-family: SeoulNamsan, sans-serif;
+        }
+
+        .counter {
+            display: flex;
+            align-items: right;
+            margin-right: 10%;
+            gap: 20px;
+            display: flex;
+            width: 60px;
+            height: 20px;
+            padding: 12px 20px;
+            justify-content: center;
+            flex-shrink: 0;
+            border-radius: 62px;
+            border: 2px solid #DE96AB;
+        }
+
+        .counter-button {
+            font-size: 20px;
+            font-weight: bold;
+            color: #DE96AB;
+            background: none;
+            width: 60px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .counter-value {
+            font-size: 16px;
+            color: #DE96AB;
+        }
+
+        
+        .total-sum {
+            width: 100%;
+            text-align: right;
+        }
+
+        #total-sum-number {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: right;
+            margin-bottom: 20px;
+            color: #282E4C;
+            font-family: SeoulNamsan;
+            font-size: 24px;
+            width: 100%;
+        }
+
+/* button */
+        .payment-button {
+            display: flex;
+            width: 100%;
+            max-width: 300px;
+            height: 47px;
+            padding: 4px 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+            border-radius: 20px;
+            background: #282E4C;
+            color: #F8F7F7;
+            text-decoration: none;
+            text-align: center;
+            font-family: SeoulNamsan;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+        }
+/* confirmation message */
+        .confirmation-message {
+            text-align: center;
+            font-family: SeoulHangang CB, sans-serif;
+            font-size: 14px;
+            color: #272737;
+            text-align: center;
+        }
+
+/* Optional: Hover effect for the button */
+        .payment-button:hover {
+            background-color: #3a3f63;
+            border-color: #3a3f63;
+            transform: scale(1.05); /* Slightly enlarge the button */
+        }
+
+/* star decoration */
+        .star {
+            position: absolute;
+        }
+        
+        .star img {
+            width: 35px;
+            height: 35px;
+        }
+        
+        #star1 {
+            top: 2%;
+            left: 50%;
+        }
+
+/* navigation bar*/
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 600px;
+            background-color: #3E3E53;
+            padding: 10px;
+            border-radius: 21px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+          }
+          
+          .nav-item {
+            position: relative;
+            transition: transform 0.3s ease-out;
+          }
+          
+          .nav-item img {
+            width: 24px;
+            transition: transform 0.3s ease-out;
+          }
+          
+          .nav-item.active {
+            transform: translateY(-20px); /* Lift active icon */
+          }
+          
+          .nav-item::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0); /* Start with scale of 0 */
+            width: 50px;
+            height: 50px;
+            background-color: #3E3E53; /* Circle color */
+            border-radius: 50%;
+            z-index: -1; /* Places the circle behind the icon */
+            transition: transform 2s ease-out; /* Smooth expansion */
+          }
+          
+          .nav-item.active::before {
+            transform: translate(-50%, -50%) scale(1); /* Expands the circle smoothly */
+          }

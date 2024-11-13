@@ -1,3 +1,4 @@
+/* back icon */
 .back-icon {
     display: flex;
     width: 20px;
@@ -8,9 +9,10 @@
     position: absolute;
     top: 20px;
     left: 20px;
+    cursor: pointer;
 }
 
-/* Global Styles */
+/* general */
 body {
     font-family: SeoulNamsan, sans-serif;
     margin: 0;
@@ -19,7 +21,7 @@ body {
     justify-content: center;
 }
 
-/* Container */
+/* main content*/
 .container {
     max-width: 600px;
     margin: 50px auto;
@@ -52,25 +54,23 @@ body {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 30px */
+    line-height: 150%;
 }
 
-/* Card Image */
 .card-image img {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     margin: 0 auto 30px;
     display: block;
 }
 
-/* Form Rows */
+/* form */
 .form-row {
     display: flex;
     gap: 50px;
     margin-bottom: 20px;
 }
 
-/* Form Group */
 .form-group {
     flex: 1;
     color: #B27889;
@@ -78,7 +78,6 @@ body {
     font-size: 14px;
 }
 
-/* Input Fields */
 input[type="text"], input[type="password"] {
     width: 100%;
     padding: 10px;
@@ -109,8 +108,32 @@ input[type="text"]:focus, input[type="password"]:focus {
     justify-content: center;
     align-items: center;
     height: 20px;
-    border: solid #B27889;
+    border: 2px solid #B27889;
     border-radius: 20px;
+}
+
+.cvv-group {
+    position: relative;
+    width: 100%; /* Allow it to span the container width */
+}
+
+.input-and-icon {
+    position: relative;
+    width: 100%;
+}
+
+
+.eye-icon {
+    position: absolute;
+    top: 50%; /* Vertically center */
+    right: 20%; /* Distance from right */
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#eye-icon-img {
+    width: 20px;
+    height: 20px;
 }
 
 #expiration-date {
@@ -119,8 +142,8 @@ input[type="text"]:focus, input[type="password"]:focus {
     justify-content: center;
     align-items: center;
     height: 20px;
-    width: 70%;
-    border: solid #B27889;
+    width: 70%;  /* Ensures they are both the same width */
+    border: 2px solid #B27889;
     border-radius: 20px;
 }
 
@@ -130,45 +153,35 @@ input[type="text"]:focus, input[type="password"]:focus {
     justify-content: center;
     align-items: center;
     height: 20px;
-    width: 70%;
-    border: solid #B27889;
+    width: 70%;  /* Ensures they are both the same width */
+    border: 2px solid #B27889;
     border-radius: 20px;
 }
 
-/* CVV Group */
-.cvv-group {
-    position: relative;
-}
+/* buttons */
 
-.eye-icon {
-    position: absolute;
-    top: 60%;
-    right: 5px;
-    transform: translateY(-50%);
-}
-
-/* Button Row */
-.form-row.buttons {
+.form-row-buttons {
     display: flex;
-    justify-content: center; /* Centers the buttons horizontally */
-    gap: 15px; /* Adds space between the Cancel and Confirm buttons */
-    margin-top: 20px; /* Space above the buttons */
-    width: 90%; /* Controls the width of the button container */
-    align-items: center; /* Centers buttons vertically in the row */
+    justify-content: center;
+    gap: 15px;
+    margin-top: 60px;
+    width: 100%;
+    align-items: center;
 }
 
-/* Buttons */
 button {
     padding: 12px;
     border-radius: 20px;
     font-size: 16px;
     border: 2px solid #282E4C;
-    width: 100%; /* Ensures buttons take up full width of their parent container */
+    width: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
 /* Cancel Button */
 button[type="cancel"] {
-    background-color: #ffffff;
+    background-color: white;
     color: #282E4C;
     text-align: center;
     font-family: SeoulNamsan;
@@ -180,4 +193,16 @@ button[type="confirm"] {
     color: white;
     text-align: center;
     font-family: SeoulNamsan;
+}
+
+/*Hover Effects*/
+button[type="cancel"]:hover {
+    background-color: #f4f4f4; 
+    color: #000; 
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+button[type="confirm"]:hover {
+    background-color: #3a3f63;
+    transform: scale(1.05); /* Slightly enlarges the button */
 }

@@ -1,4 +1,4 @@
-
+/* back icon */
 .back-icon {
     display: flex;
     width: 20px;
@@ -9,9 +9,10 @@
     position: absolute;
     top: 20px;
     left: 20px;
+    cursor: pointer;
 }
 
-/* Global Styles */
+/* general */
 body {
     font-family: SeoulNamsan, sans-serif;
     margin: 0;
@@ -19,19 +20,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Full viewport height */
     background-color: #f4f4f4;
 }
 
-/* Container */
+/* main content */
 .container {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
     border-radius: 10px;
-    align-items: center; /* Centers content horizontally */
-    justify-content: center; /* Centers content vertically */
-    text-align: center; /* Centers text */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;  /* Stack the items vertically */
 }
 
 .container-text {
@@ -61,24 +63,41 @@ body {
     font-weight: 400;
     line-height: 150%; /* 30px */
 }
+
 .checkout-image {
-    width: auto;
-    height: 400px;
-    flex-shrink: 0;
+    width: 100%; 
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-
+/* button */
 .confirm-button {
-    padding: 15px 80px;
+    padding: 12px 100px;
     border-radius: 20px;
     font-size: 16px;
     border: 2px solid #282E4C;
-    width: 30px;
     background-color: #282E4C;
     color: white;
     text-align: center;
     font-family: SeoulNamsan;
     text-decoration: none;
-    }
+    width: auto;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
 
-    
+/* Make sure the <a> inside the confirm-button div inherits white text color */
+.confirm-button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Optional: Hover effect for the button */
+.confirm-button:hover {
+    background-color: #3a3f63;
+    border-color: #3a3f63;
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
