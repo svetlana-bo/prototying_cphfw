@@ -81,24 +81,25 @@ header {
 }
 
 .login-button {
-  background-color: #de96ab;
+  background-color: #f5dee5;
   border: none;
   width: 105px;
   padding: 4px 20px;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin: 11px 10px 0 0;
-  color: #f8f7f7;
+  margin-right: 10px;
+  margin-top: 11px;
+  color: #434d80;
   font: 400 16px/1.5 SeoulNamsan, sans-serif;
   border-radius: 13px;
 
 }
 
 .login-button:active {
-  border: 2px solid #DE96AB;
+  border: 2px solid #f5dee5;
   background-color: transparent;
-  color: #DE96AB;
+  color: #f5dee5;
 }
 
 
@@ -128,9 +129,13 @@ nav a {
 }
 
 nav .active {
-  color: #DE96AB;
-  border-bottom: 2px solid #DE96AB;
+  color: #f0abbc;
+  border-bottom: 2px solid #f0abbc;
 }
+
+/* Header end */
+
+/* Main start */
 
 .hero {
   background-size: auto;
@@ -178,7 +183,7 @@ nav .active {
   display: flex;
   width: 167px;
   height: 20px;
-  border: 2px solid #DE96AB;
+  border: 2px solid #282E4C;
   background-color: transparent;
   justify-content: center;
   align-items: center;
@@ -187,7 +192,7 @@ nav .active {
   margin: 10px 35px 10px 0;
   cursor: pointer;
   font-weight: bold;
-  color: #DE96AB;
+  color: #282E4C;
   font-family: SeoulNamsan;
   font-size: 16px;
   font-style: normal;
@@ -197,7 +202,7 @@ nav .active {
 }
 
 .take-photo-button:active {
-  background-color: #DE96AB;
+  background-color: #282E4C;
   color:#f8f7f7;
   cursor: pointer;
 }
@@ -243,14 +248,6 @@ nav .active {
   align-items: center;
 }
 
-/* .partner-text {
-width: 374px;
-margin: 0, auto;
-text-align: center;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%; /* 27px */ 
 
 /* partner text changed to have gradient*/
 .partner-text {

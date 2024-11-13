@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Copenhagen Fashion Week</title>
+
+  <title>Copenhagen Fashion Week - Designers</title>
+  <meta name="description" content="Learn about the sustainable designers participating in Copenhagen Fashion Week">
+
   <link rel="stylesheet" href="css/designers_style.css">
+  <script src="js/javascript.js"></script>
 </head>
 
 <body>
@@ -18,20 +22,23 @@
       </div>
     </div>
 
-    <nav>
+    <!-- Navigation bar -->
+
+    <nav class="navbar">
         <a href="index.html">Home</a>
-        <a href="designers.html "class="active">Designers</a>
-          <ul class="dropdown">
-            <li>
-              <a href="#forza">Forza Collective</a>
-            </li>
-            <li>
-              <a href="#alicek">Alice K</a>
-            </li>
-            <li>
-              <a href="#berner">Berner Kühl</a>
-            </li>
-          </ul>
+
+        <!-- Designer Dropdown -->
+          <div class="dropdown">
+            <a href="designers.html "class="active">Designers</a>
+            <button class="dropbtn">▼</button>
+            <ul class="dropdowncontent">
+              <li><a href="#forza">Forza Collective</a></li>
+              <li><a href="#alicek">Alice K</a></li>
+              <li><a href="#berner">Berner Kühl</a></li>
+            </ul>
+          </div>
+          <!-- Dropdown end -->
+
         <a href="trends.html">Trends</a>
         <a href="cphfw25.html">#CPHFW25</a>
     </nav>
@@ -66,9 +73,9 @@
       </div>
 
        
-      <div class="designer1">
+      <div class="designer1" id="forza">
         <article class="designer-article">
-          <h1 id="forza">Forza Collective</h1>  
+          <h1>Forza Collective</h1>  
           <p>
             The brand uses eco-friendly materials like organic cotton and recycled synthetics, focusing on minimal environmental impact. Known for bold, gender-neutral designs, Forza Collective creates functional pieces that are versatile and seasonless.
           </p>
@@ -83,9 +90,9 @@
         </article>  
       </div>
 
-      <div class="designer2">
+      <div class="designer2" id="alicek">
         <article class="designer-article">
-          <h1 id="alicek">Alice K</h1>  
+          <h1>Alice K</h1>  
           <p>
             ALICE.K - is a Kyiv-based label offering the concept of 'Extra Basics'. The brand's DNA based on mixing bright extra pieces with everyday routine essentials. Whatever it is - a college sweatshirt worn with a mini skirt or lace dress over the basic T-shirt, the objective is to celebrate life, youth and freedom.
           </p>
@@ -100,9 +107,9 @@
         </article>  
       </div>
 
-      <div class="designer3">
+      <div class="designer3" id="berner">
         <article class="designer-article">
-          <h1 id="berner">Berner Kühl</h1>  
+          <h1>Berner Kühl</h1>  
           <p>
             Informed by a past in production before moving on to design and a Master's degree from Polimoda in Firenze, Frederik is striving to convey his vision in ultimate materiality. Prolonging his vision of texture and feel, his ideas first solidify into materials, which are then driving the actual design.
           </p>
@@ -159,6 +166,5 @@
       <img src="icons/icon-my-profile.svg" alt="Profile">
     </a>
   </div>
-
 </body>
 </html>
