@@ -163,6 +163,7 @@ ul {
   width: 100vw; 
   height: 100vh;
   background-size: cover;
+  background-position: center top;
 }
 
 .designer2 {
@@ -170,6 +171,7 @@ ul {
   width: 100vw; 
   height: 100vh;
   background-size: cover;
+  background-position: center top;
 }
 
 .designer3 {
@@ -177,6 +179,7 @@ ul {
   width: 100vw; 
   height: 100vh;
   background-size: cover;
+  background-position: center top;
 }
 
 .star-container {
