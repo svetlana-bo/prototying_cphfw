@@ -3,12 +3,15 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
 /* Header */
 header {
     background-color: #3E3E53;
     padding: 10px;
     height: 125px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
   }
 
     .top-bar {
@@ -71,7 +74,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    font: 400 14px/1.5 SeoulNamsan, sans-serif;
+    font: 400 13.6px/1.5 SeoulNamsan, sans-serif;
     letter-spacing: 0.28px;
   }
   
@@ -80,6 +83,15 @@ header {
     border-bottom: 2px solid #DE96AB;
   }
 
+.dropdown {
+  width: auto;
+  position: absolute;
+  display: none;
+}
+
+.dropdown li {
+  display: block;
+}
 /* Header End */
 
 
@@ -87,37 +99,74 @@ header {
 
 .designer-container {
   display: flex;
+  grid-template-columns: 1fr; /* 1 full row */
+  width: 100vw;
+  height: 100vh;
+  padding-top: 125px;
+  overflow: hidden;
+}
+
+.designer-slide {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100vh); /* Fills every grid at 100% of height */
+  
+}
+
+.designer-article {
+  display: flex;
   flex-direction: column;
-  background-image: url(../images/Designers-forzacollective.svg);
-  width: 100%; /* Make sure it's occupying space */
-  height: 100vh; /* Set an explicit height */
+  align-items: flex-start;
+  font-family: SeoulNamsan;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 23.85px */
+  color: #3F4878;
+  margin-left: 5vw;
+  margin-top: 18vh;
+}
+
+.designer1 {
+  background-image: url(../images/designers-forzacollective.svg);
+  width: 100vw; 
+  height: 100vh;
   background-size: cover;
+}
+
+.designer2 {
+  background-image: url(../images/designers-alicek.svg);
+  width: 100vw; 
+  height: 100vh;
+  background-size: cover;
+}
+
+.designer3 {
+  background-image: url(../images/designers-berner.svg);
+  width: 100vw; 
+  height: 100vh;
+  background-size: cover;
+}
+
+.star-container {
+  position: absolute;
+  top: 375px;
+  left: 215px;
+  max-width: 69px;
+  height: 69px;
+  z-index: 1;
 }
 
   h1{
   display: flex;
-  width: 218px;
-  height: 143px;
   padding-bottom: 20px;
   flex-direction: column;
   justify-content: center;
-  flex-shrink: 0;
+  color: #3F4878;
   font-family: "Advercase Demo";
-  font-size: 49.665px;
+  font-size: 49px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 74.498px */
-}
-
-.forza-article {
-  font-family: SeoulNamsan;
-  font-size: 15.9px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 23.85px */
-  transform: translateY(150px);
-  padding: 0 30px 0 15px;
-  width: 30vh;
 }
 
 .line-divider {
@@ -127,14 +176,56 @@ header {
   margin-top: 18px;
 }
 
-.button-forzacollective {
+.button-designer {
   display: flex;
-  width: max-content;
-  height: max-content;
+  width: 159px;
+  justify-content: center;
+  padding: 4px 20px;
+  margin-top: 1vh;
+  border: 2px solid #3E4877;
+  border-radius: 13px;
+  background: #3E4877;
+  color: #f8f7f7;
+  text-align: center;
+  font-family: SeoulNamsan;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.button-designer:active {
+  background-color: transparent;
+  color: #3E4877;
+}
+
+/* Drag indicator */
+.drag-container {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  flex-direction: row;
+  margin-top: 2vh;
+}
+
+.drag-text {
+  color: #3E4877;
+  font-family: SeoulNamsan;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
 }
 
    /* Sticky navbar */
   .bottom-nav {
+    box-sizing: border-box;
     position: fixed;
     bottom: 0;
     left: 50%;
@@ -182,4 +273,19 @@ header {
   .nav-item.active::before {
     transform: translate(-50%, -50%) scale(1); /* Expands the circle smoothly */
   }
+
+  /* Media queries */
+@media screen and (min-width: 400px) {
+  .bottom-nav {
+    max-width: 1080px;
+  }
+
+  .designer-article {
+    max-width: 250px;
+  }
+
+}
+
+
+
   
