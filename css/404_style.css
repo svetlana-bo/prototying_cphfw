@@ -25,7 +25,7 @@ body {
     color: #272737;
     
 /* Background Image with transparency */
-    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("images/gradient2.svg");
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/gradient2.svg");
     background-size: cover;
     background-position: center;
 }
