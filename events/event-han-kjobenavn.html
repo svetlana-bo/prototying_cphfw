@@ -1,0 +1,124 @@
+<!--TO ADD
+    body {
+      max-width: 800px;
+      margin: 0 auto; /* Centers the content */
+    }
+ to main styles CSS in the end -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copenhagen Fashion Week - Han Kjobehavn show tickets</title>
+    <link rel="stylesheet" href="../css/main_style.css">
+    <link rel="stylesheet" href="../css/events-event-page.css">
+    <link rel="stylesheet" href="../css/pop_ups.css">
+    <!-- Link to the external JavaScript file -->
+    <script src="js/event_page.js"></script>
+
+</head>
+
+<body style="background-color: #f8f7f7;">
+    <!--Back Button-->
+    
+        <div class="back-icon" onclick="goBack()">
+            <img src="../icons/icon-back.svg" alt="Back Icon">
+        </div>
+
+    <section class="event-wrap-container">
+
+        <h3 class="event-title">Han Kjøbenhavn
+            </h3>
+    <div class="event-card">
+            <img src="../images/image 10 (4).png" alt="Event Image">
+            <div class="event-info">
+              <div class="event-details">
+                
+                <p>Calrlsbergbyen</p>
+                <p>8 August'25, 17:00</p>
+                <p>370 DKK</p>
+
+              </div>
+              <a href="#tickets" style="text-decoration: none;">
+              <button class="buy-ticket">Buy Ticket</button>
+            </a>
+            </div>
+    </div>
+
+    <div class="text-container">
+        <p>Han Kjøbenhavn, a leading Danish fashion brand founded in 2008, is celebrated for its minimalist yet provocative aesthetic, combining traditional Scandinavian design with an edgy, urban twist. 
+            Known for its innovative approach to fashion, Han Kjøbenhavn's collections frequently feature clean lines, experimental silhouettes, and bold graphic elements, offering a modern interpretation of streetwear and tailored designs. 
+            The brand emphasizes storytelling, exploring themes of identity and rebellion while pushing the boundaries of contemporary menswear and womenswear. </p>
+            <br> 
+            <p>As a regular highlight of Copenhagen Fashion Week, Han Kjøbenhavn consistently delivers impactful runway shows that blend fashion, art, and narrative, captivating both audiences and industry experts. </p>
+        </p>
+        </div>
+
+    </section>
+        
+
+            <h3  style="margin-left: 25px;">Tickets</h3>
+            <div class="divider" id="tickets"></div>
+
+            <div class="counter-container">
+                <div class="price-counter">
+                 <div class="counter">
+                    <span class="counter-button decrease">-</span>
+                    <span class="counter-value">1</span>
+                    <span class="counter-button increase">+</span>
+                 </div>
+            
+                </div>
+
+                <button class="add-to-cart-button">Add to Cart</button>
+
+            </div>
+
+            <!-- Pop-Up Added to Cart -->
+<div class="popup-container" id="added-to-cart" onclick="closePopup(event, 'added-to-cart')">
+    <div class="popup-content" onclick="event.stopPropagation()">
+        <img src="/icons/success-icon-mini.svg" alt="Mini success icon">
+        <h2 class="popup-title">Added to cart!</h2>
+        <p class="popup-paragraph">Your ticket got added to the cart.</p>
+        
+        <!-- Button Container -->
+        <div class="popup-buttons-cart-edition">
+            <button class="popup-buttons-cart" onclick="window.location.href='/cart.html'">Go to Cart</button>
+            <button class="popup-buttons-cart" onclick="window.location.href='/events.html'">Explore more events</button>
+        </div>
+        
+        <!-- Stars -->
+        <div class="two-stars" id="stars1">
+            <img src="/icons/two-stars-blue.svg" alt="Two Stars Icon">
+        </div>
+        <div class="two-stars" id="stars2">
+            <img src="/icons/two-stars-blue.svg" alt="Two Stars Icon">
+        </div>
+    </div>
+</div>
+
+    <!--Navigation Bar-->
+    <div class="bottom-nav">
+        <a href="../index.html" class="nav-item">
+          <img src="../icons/icon-home.svg" alt="Home">
+        </a>
+        <a href="../map.html" class="nav-item">
+          <img src="../icons/icon-map.svg" alt="Map">
+        </a>
+        <a href="../events.html" class="nav-item">
+          <img src="../icons/icon-tickets.png" alt="Tickets">
+        </a>
+        <a href="../calendar.html" class="nav-item">
+          <img src="../icons/icon-calendar.svg" alt="Calendar">
+        </a>
+        <a href="../my_profile.html" class="nav-item">
+          <img src="../icons/icon-my-profile.svg" alt="Profile">
+        </a>
+      </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="../js/event_page.js"></script>
+</body>
+</html>
