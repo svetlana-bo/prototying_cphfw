@@ -1,0 +1,163 @@
+.event-wrap-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+.btn {
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    color: grey;
+  }
+
+.buy-ticket {
+    background-color: #F5DEE5;
+    color: #434D80;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'SeoulNamsan', sans-serif;
+    display: flex;
+    
+    width: 138px;
+    height: 48px;
+    padding: 4px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  
+  .buy-ticket-button:active {
+    transform: scale(1.05); /* Slightly enlarge the button */
+  }
+  
+  /* Event card styling */
+.event-card {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .event-card img {
+    width: 100%;
+    height: 334px;
+    object-fit: cover;
+    object-position: top;
+  }
+  
+  .event-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .event-info {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    font-family: "SeoulHangang CB";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%
+  }
+  
+  .text-container p {
+    font-size: 20px;
+    margin-top: 0;         /* No space before a paragraph */
+    margin-bottom: 20px;   /* 20px space after each paragraph */
+  }
+
+
+  .counter-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+
+  .divider {
+    border-top: 1px solid #5966AA;
+    margin:  0;
+    height: 1px;
+    width: 100%;
+}
+
+.price-counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+    gap: 20px;
+    display: flex;
+    width: 248px;
+    height: 64px;
+    padding: 12px 20px;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 62px;
+    border: 2px solid #F0A8BC;
+}
+
+.counter-button {
+    font-size: 24px;
+    font-weight: bold;
+    color: #434D80;
+    background: none;
+    width: 60px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.counter-value {
+    font-size: 24px;
+    color: #434D80;
+}
+
+.add-to-cart-button {
+    display: flex;
+    width: 264px;
+    height: 56px;
+    background-color: #F5DEE5;
+    color: #434D80;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'SeoulNamsan', sans-serif;
+    padding: 4px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    margin-top: 35px;
+}
+
+.add-to-cart-button:active {
+    transform: scale(1.05); /* Slightly enlarge the button */
+  }

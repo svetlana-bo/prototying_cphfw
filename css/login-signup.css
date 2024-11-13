@@ -10,7 +10,7 @@
     left: 20px;
 }
 
-.login-container {
+.login-container, .signup-container {
     display: flex;
     flex-direction: column; /* Stacks children vertically */
     align-items: center;     /* Centers children horizontally within the container */
@@ -18,7 +18,7 @@
     margin-top: 137px;
 }
 
-.login-container h1 {
+.login-container h1, .signup-container h1 {
 color: #282E4C;
 text-align: center;
 font-family: "Advercase Demo";
@@ -28,19 +28,19 @@ font-weight: 700;
 line-height: 150%; /* 54px */
 }
 
-.login-container p {
-    color:#434D80;
+.login-container p, .signup-container p{
+color:#434D80;
 text-align: center;
-font-family: SeoulNamsan;
-font-size: 16px;
+font-family: SeoulNamsan, sans-serif;
+font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: 150%; /* 24px */
 }
 
-.login-form-group {
+.login-form-group, .signup-form-group {
     color: #B27889;
-    font-family: SeoulNamsan;
+    font-family: SeoulNamsan, sans-serif;
     font-size: 14px;
     margin-top: 20px;
     position: relative;
@@ -52,7 +52,7 @@ input[type="email"], input[type="password"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-family: SeoulNamsan;
+    font-family: SeoulNamsan,sans-serif;
     font-size: 14px;
 }
 
@@ -61,7 +61,7 @@ input[type="email"]:focus, input[type="password"]:focus {
     outline: none;
 }
 
-#password, #email {
+#password, #email, #create-password, #confirm-password, #name {
     width: 322px;
     display: flex;
     padding: 12px 17px 11px 17px;
@@ -74,10 +74,18 @@ input[type="email"]:focus, input[type="password"]:focus {
 
 .eye-icon {
     position: absolute;
-    bottom: -3px;
-    right: 5px;
+    bottom: -5px;
+    right: 10px;
     transform: translateY(-50%);
 }
+
+.eye-icon2 {
+    position: absolute;
+    bottom: -5px;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
 
 /* Buttons */
 button {
@@ -101,13 +109,73 @@ button[type="confirm"] {
     background-color: #282E4C;
     color: white;
     text-align: center;
-    font-family: SeoulNamsan;
+    font-family: SeoulNamsan, sans-serif;
 }
 
 .main-wrapper {
-    display: flex;
+display: flex;
   align-items: center;
   display: flex;
   flex-direction: column;
   padding: 40px 20px 20px 20px;
+}
+
+
+/* stars decoration */
+#star1 {
+    position: absolute;
+    top: 120px;
+    transform: scaleY(-1); /* Mirroring the star vertically */
+    left: calc(50% - 110px); /* 110px to the left of the center */
+    
+}
+
+#star1 img {
+    width: 50px;
+    height: 50px;
+}
+
+
+#star2 {
+    position: absolute;
+    top: 170px;
+    left: calc(50% + 60px); /* 110px to the left of the center */
+    
+}
+
+#star2 img {
+    width: 25px;
+    height: 25px;
+}
+
+#star3 {
+    position: absolute;
+    top: 85px;
+    left: calc(50% - 185px); /* 110px to the left of the center */
+    transform: scale(-1)
+    
+}
+
+#star3 img {
+    width: 50px;
+    height: 50px;
+}
+
+#star4 {
+    position: absolute;
+    top: 60px;
+    left: calc(50% + 140px); /* 110px to the left of the center */
+    
+}
+
+#star4 img {
+    width: 30px;
+    height: 30px;
+}
+
+.confirmation-icon-wrapper {
+    display: flex;
+    justify-content: center; /* Centers the child element horizontally */
+    align-items: center;     /* Centers the child element vertically if needed */
+    width: 100%;             /* Ensures the container takes full width for centering */
 }

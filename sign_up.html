@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/login-signup.css">
+  <link rel="stylesheet" href="css/main_style.css">
+  <title>Copenhagen Fashion Week - Create Account</title>
+  <script src="js/javascript.js"></script>
+  <script src="js/login_signup.js"></script>
+</head>
+<body>
+
+  <div class="back-icon" onclick="goBack()">
+    <img src="icons/icon-back.svg" alt="Back Icon">
+  </div>
+
+  <div class="star" id="star3">
+    <img src="/icons/two-stars-pink.svg" alt="Two Stars decorative icon">
+  </div>
+  <div class="star" id="star4">
+    <img src="/icons/one-star-pink.svg" alt="One Star decorative icon">
+  </div>
+
+  <!-- Create Account Form Container -->
+  <div class="signup-container" style="margin-top: 70px;">
+
+    <!-- Create Account Title -->
+    <h1>Create an Account</h1>
+    <p style="margin-top: 13px;">Already have an account? <a style="color: inherit;" href="login.html">Log in</a></p>
+
+    <form id="signup-form">
+      <div class="signup-form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="signup-form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" title="Enter a valid email" inputmode="email" required>
+      </div>
+
+      <div class="signup-form-group">
+        <label for="create-password">Create password</label>
+        <div class="password-container">
+          <input type="password" id="create-password" name="create-password" placeholder="*******" required>
+          <span class="eye-icon2" onclick="toggleEyeIcon('create-password', 'eye-icon-img1')">
+            <img src="icons/icon-eye-closed.svg" alt="Eye Icon" id="eye-icon-img1">
+          </span>
+        </div>
+      </div>
+
+      <div class="signup-form-group">
+        <label for="confirm-password">Confirm password</label>
+        <div class="password-container">
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="*******" required>
+          <span class="eye-icon2" onclick="toggleEyeIcon('confirm-password', 'eye-icon-img2')">
+            <img src="icons/icon-eye-closed.svg" alt="Eye Icon" id="eye-icon-img2">
+          </span>
+        </div>
+      </div>
+
+      <!-- Sign Up Button -->
+      <div>
+        <a href="my_profile.html" style="text-decoration: none;">
+      <button type="confirm">Sign up</button>
+        </a>
+      </div>
+
+      <!-- Sign Up with Google Button -->
+      <div>
+        <a href="my_profile.html" style="text-decoration: none;">
+      <button type="confirm" style="margin-top: 10px;">Sign up with Google</button>
+        </a>
+      </div>
+
+      <!-- Terms and Policy Agreement -->
+      <p style="margin-top: 50px;">
+        By signing up, you agree to <br>the <a style="color: inherit;" href="404.html">Terms of Service</a> and <a style="color: inherit;" href="404.html">Privacy Policy</a>
+      </p>
+
+      <!-- Confirmation Icon -->
+      <div class="confirmation-icon-wrapper" style="margin-top: 15px;">
+        <img src="icons/icon-check1.svg" alt="Confirmation">
+      </div>
+
+    </form>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="index.html" class="nav-item">
+      <img src="icons/icon-home.png" alt="Home">
+    </a>
+    <a href="map.html" class="nav-item">
+      <img src="icons/icon-map.svg" alt="Map">
+    </a>
+    <a href="events.html" class="nav-item">
+      <img src="icons/icon-tickets.png" alt="Tickets">
+    </a>
+    <a href="calendar.html" class="nav-item">
+      <img src="icons/icon-calendar.svg" alt="Calendar">
+    </a>
+    <a href="my_profile.html" class="nav-item">
+      <img src="icons/icon-my-profile.svg" alt="Profile">
+    </a>
+  </div>
+</body>
+</html>

@@ -149,7 +149,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Body-Font', sans-serif;
+  font-family: "SeoulHangang CB", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%
 }
 
 .event-details {
