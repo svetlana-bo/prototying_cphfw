@@ -89,6 +89,13 @@ button {
     margin-top: 36px;
 }
 
+.payment-button:active {
+    background-color: #282E4C;
+    border-color: #282E4C;
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+
 /* Confirm Button */
 button[type="confirm"] {
     background-color: #282E4C;

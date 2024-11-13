@@ -37,6 +37,26 @@
   padding-top: 20px;
 }
 
+.profile-login-button {
+  margin-top: none; 
+  background-color: #5966AA;
+  border: none;
+  width: 105px;
+  padding: 4px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #f8f7f7;
+  font: 400 16px/1.5 SeoulNamsan, sans-serif;
+  border-radius: 13px;
+
+}
+
+.profile-login-button:active {
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+
 
 /* Tabs container spans full width */
 .tabs {
@@ -92,6 +112,6 @@
   transition: background-color 0.3s;
 }
 
-.purchase-button:hover {
-  background-color: #1f1d33;
+.purchase-button:active {
+  transform: scale(1.05); /* Slightly enlarge the button */
 }
