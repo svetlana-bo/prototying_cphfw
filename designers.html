@@ -5,38 +5,141 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Copenhagen Fashion Week</title>
   <link rel="stylesheet" href="css/designers_style.css">
-  <link rel="javascript" href="js/javascript.js">
 </head>
-<body>
 
+<body>
   <!-- Header Section -->
   <header>
     <div class="top-bar">
-      <img src="images/logo.png" alt="Logo" class="logo">
+      <img src="images/CPHFW-Logo.svg" alt="Logo" class="logo">
       <div class="header-icons">
         <button class="login-button">Log in</button>
         <img src="icons/search.svg" alt="Search button" class="search-icon">
       </div>
     </div>
+
     <nav>
         <a href="index.html">Home</a>
-        <a href="designers.html" class="active">Designers</a>
+        <a href="designers.html "class="active">Designers</a>
+          <ul class="dropdown">
+            <li>
+              <a href="#forza">Forza Collective</a>
+            </li>
+            <li>
+              <a href="#alicek">Alice K</a>
+            </li>
+            <li>
+              <a href="#berner">Berner Kühl</a>
+            </li>
+          </ul>
         <a href="trends.html">Trends</a>
         <a href="cphfw25.html">#CPHFW25</a>
     </nav>
   </header>
 
-  <main class="designer-container">
-    <article class="forza-article">
-      <h1>Forza Collective</h1>
-      <p>
-        The brand uses eco-friendly materials like organic cotton and recycled synthetics, focusing on minimal environmental impact. Known for bold, gender-neutral designs, Forza Collective creates functional pieces that are versatile and seasonless.
-      </p>
-      <div class="line-divider"></div>
-      <button class="button-forzacollective">Visit Website</button>
-    </article>
-  </main>
+  <!-- Main -->
 
+  <main class="designer-container">
+
+    <div class="star-container">
+      <img class="star-icons" src="icons/icon-bluestars.svg" alt="two stars">
+    </div>
+    
+<!-- interactive vertical carousel containing the designer articles  -->
+      <!-- last clone -->
+    <div class="designer-slide">
+      <div id="lastclone" class="designer3">
+        <article class="designer-article">
+          <h1>Berner Kühl</h1>  
+          <p>
+            Informed by a past in production before moving on to design and a Master's degree from Polimoda in Firenze, Frederik is striving to convey his vision in ultimate materiality. Prolonging his vision of texture and feel, his ideas first solidify into materials, which are then driving the actual design.
+          </p>
+          <div class="line-divider"></div>
+          <button class="button-designer">Visit Website</button>
+
+          <button class="drag-container">
+            <img src="icons/icon-downarrow.svg" alt="Arrow pointing down">
+            <span class="drag-text">Next</span>
+          </button>
+
+        </article>  
+      </div>
+
+       
+      <div class="designer1">
+        <article class="designer-article">
+          <h1 id="forza">Forza Collective</h1>  
+          <p>
+            The brand uses eco-friendly materials like organic cotton and recycled synthetics, focusing on minimal environmental impact. Known for bold, gender-neutral designs, Forza Collective creates functional pieces that are versatile and seasonless.
+          </p>
+          <div class="line-divider"></div>
+          <button class="button-designer">Visit Website</button>
+
+          <button class="drag-container">
+            <img src="icons/icon-downarrow.svg" alt="Arrow pointing down">
+            <span class="drag-text">Next</span>
+          </button>    
+      
+        </article>  
+      </div>
+
+      <div class="designer2">
+        <article class="designer-article">
+          <h1 id="alicek">Alice K</h1>  
+          <p>
+            ALICE.K - is a Kyiv-based label offering the concept of 'Extra Basics'. The brand's DNA based on mixing bright extra pieces with everyday routine essentials. Whatever it is - a college sweatshirt worn with a mini skirt or lace dress over the basic T-shirt, the objective is to celebrate life, youth and freedom.
+          </p>
+          <div class="line-divider"></div>
+          <button class="button-designer">Visit Website</button>
+
+          <button class="drag-container">
+            <img src="icons/icon-downarrow.svg" alt="Arrow pointing down">
+            <span class="drag-text">Next</span>
+          </button>
+      
+        </article>  
+      </div>
+
+      <div class="designer3">
+        <article class="designer-article">
+          <h1 id="berner">Berner Kühl</h1>  
+          <p>
+            Informed by a past in production before moving on to design and a Master's degree from Polimoda in Firenze, Frederik is striving to convey his vision in ultimate materiality. Prolonging his vision of texture and feel, his ideas first solidify into materials, which are then driving the actual design.
+          </p>
+          <div class="line-divider"></div>
+          <button class="button-designer">Visit Website</button>
+
+          <button class="drag-container">
+            <img src="icons/icon-downarrow.svg" alt="Arrow pointing down">
+            <span class="drag-text">Next</span>
+          </button>
+      
+        </article>  
+      </div>
+
+      <!-- first clone -->
+      <div id="firstclone" class="designer1">
+        <article class="designer-article">
+          <h1>Forza Collective</h1>  
+          <p>
+            The brand uses eco-friendly materials like organic cotton and recycled synthetics, focusing on minimal environmental impact. Known for bold, gender-neutral designs, Forza Collective creates functional pieces that are versatile and seasonless.
+          </p>
+          <div class="line-divider"></div>
+          <button class="button-designer">Visit Website</button>
+          
+          <button class="drag-container">
+            <img src="icons/icon-downarrow.svg" alt="Arrow pointing down">
+            <span class="drag-text">Next</span>
+          </button>
+      
+        </article>  
+      </div>
+
+    </div>
+
+    <script src="js/designers.js"></script>
+
+  </main>
 
   <!-- Sticky navbar -->
   <div class="bottom-nav">

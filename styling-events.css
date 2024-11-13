@@ -7,6 +7,7 @@
   font-family: 'Body-Font';
   src: url('fonts/SeoulNamsanvert.ttf');
 }
+
 .overlay {
   display: none; /* Hidden by default */
   position: fixed;
@@ -22,10 +23,17 @@
   align-items: center;
   justify-content: flex-start;
   padding: 10px 20px;
-  background-color: white;
+  background-image: url('images/');
   font-family: 'Title-Font', sans-serif;
 }
 
+.btn{
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  outline: none;
+  color: grey;
+}
 .back-button {
   font-size: 24px;
   color: #333;
@@ -57,8 +65,11 @@
   display: none;
   position: absolute;
   top: 100px; /* Adjust this value as needed */
-  right: 120px; /* Add units here */
-  background-color: rgba(255, 255, 255, 0.9);
+  right: 160px; /* Adjust as needed */
+  background-image: url('images/gradient.png'); /* Set your background image */
+  background-size: cover; /* Ensure the image covers the popup area */
+  background-position: center; /* Center the image within the popup */
+  background-color: rgba(255, 255, 255, 0.9); /* Optional: background color overlay */
   padding: 15px;
   border-radius: 15px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -70,6 +81,7 @@
   display: block;
   margin-bottom: 10px;
   font-size: 16px;
+  color: #333; /* Ensure text is readable */
 }
 
 .filter-popup button {
@@ -81,6 +93,7 @@
   cursor: pointer;
   font-size: 16px;
 }
+
 /* General styling */
 body {
   font-family: 'Body-Font', Arial, sans-serif;
@@ -181,3 +194,103 @@ align-items: center;
 gap: 10px;
 flex-shrink: 0;
 }
+ /* Sticky navbar */
+ .bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 600px;
+  background-color: #3E3E53;
+  padding: 10px;
+  border-radius: 21px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.nav-item {
+  position: relative;
+  transition: transform 0.3s ease-out;
+}
+
+.nav-item img {
+  width: 24px;
+  transition: transform 0.3s ease-out;
+}
+
+.nav-item.active {
+  transform: translateY(-20px); /* Lift active icon */
+}
+
+.nav-item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); /* Start with scale of 0 */
+  width: 50px;
+  height: 50px;
+  background-color: #3E3E53; /* Circle color */
+  border-radius: 50%;
+  z-index: -1; /* Places the circle behind the icon */
+  transition: transform 2s ease-out; /* Smooth expansion */
+}
+
+.nav-item.active::before {
+  transform: translate(-50%, -50%) scale(1); /* Expands the circle smoothly */
+}
+/* Media Query for iPad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .top-bar {
+    padding: 20px 30px;
+  }
+
+  .btn {
+    font-size: 24px;
+  }
+
+  .back-button {
+    font-size: 28px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .filter-popup {
+    width: 200px;
+    padding: 20px;
+  }
+
+  .events {
+    padding: 30px;
+    max-width: 800px;
+  }
+
+  .events h1 {
+    font-size: 40px;
+  }
+
+  .event-card img {
+    height: 300px;
+  }
+
+  .event-time, .event-title, .event-location, .buy-ticket {
+    font-size: 22px;
+  }
+
+  .bottom-nav {
+    padding: 15px;
+    max-width: 700px;
+  }
+
+  .nav-item img {
+    width: 30px;
+  }
+}
+
+
