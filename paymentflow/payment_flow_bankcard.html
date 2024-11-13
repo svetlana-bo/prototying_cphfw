@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank Details</title>
-    <link rel="stylesheet" href="/css/bankcard_style.css">
+    <link rel="stylesheet" href="../css/bankcard_style.css">
 <!-- Include pop-up CSS for Pop Up styling -->
-    <link rel="stylesheet" href="/css/pop_ups.css">
+    <link rel="stylesheet" href="../css/pop_ups.css">
 </head>
 
 <body>
     <header>
         <!--Back Button-->
         <div class="back-icon" onclick="goBack()">
-            <img src="/icons/icon-back.svg" alt="Back Icon">
+            <img src="../icons/icon-back.svg" alt="Back Icon">
         </div>
     </header>
 
@@ -26,7 +26,7 @@
 
         <!-- Card Image -->
         <div class="card-image">
-            <img src="/images/bankcard.svg" alt="Credit Card">
+            <img src="../images/bankcard.svg" alt="Credit Card">
         </div>
 
         <!-- Form -->
@@ -55,7 +55,7 @@
                             <!--Eye Icon that changes when it is clicked & hides information-->
                             <input type="password" id="cvv" name="cvv" placeholder="***" pattern="\d{3}" title="CVV must be 3 digits" inputmode="numeric" maxlength="3" required>
                             <span class="eye-icon" onclick="toggleCVV()">
-                                <img src="/icons/icon-eye-open.svg" alt="Open Eye Icon" id="eye-icon-img"> <!-- Your custom icon here -->
+                                <img src="../icons/icon-eye-open.svg" alt="Open Eye Icon" id="eye-icon-img"> <!-- Your custom icon here -->
                             </span>
                         </div>
                 </div>
@@ -81,9 +81,9 @@
     </div>
   </div>
 
-    <script src="/js/payment_flow_script.js"></script>
+    <script src="../js/payment_flow_script.js"></script>
     <!-- Include pop-up JavaScript for functionality -->
-    <script src="/js/pop_ups.js" defer></script>
+    <script src="../js/pop_ups.js" defer></script>
 
 </body>
 </html>

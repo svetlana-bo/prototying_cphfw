@@ -10,10 +10,10 @@ function toggleCVV() {
     const eyeIconImg = document.getElementById('eye-icon-img');
     if (cvvInput.type === 'password') {
         cvvInput.type = 'text';
-        eyeIconImg.src = "/icons/icon-eye-open.svg"; // Path to the "eye open" icon
+        eyeIconImg.src = "../icons/icon-eye-open.svg"; // Path to the "eye open" icon
     } else {
         cvvInput.type = "password";
-        eyeIconImg.src = "/icons/icon-eye-closed.svg"; // Path to the "eye closed" icon
+        eyeIconImg.src = "../icons/icon-eye-closed.svg"; // Path to the "eye closed" icon
     }
 }
 
