@@ -19,6 +19,7 @@ body {
     padding: 0;
     align-items: center;
     justify-content: center;
+    background-color: #f9f7f7;
 }
 
 /* Main content */
@@ -68,8 +69,8 @@ h1 {
 .container p {
     color: #272737;
     text-align: center;
-    font-family: SeoulHangang CB;
-    font-size: 20px;
+    font-family: SeoulHangang CB, sans-serif;
+    font-size: 18px;
 }
 
 /* email form */
@@ -86,6 +87,7 @@ form {
     width: 100%;
     margin: 0 auto;
     gap: 10px;
+    
 }
 
 /* Input Field */
@@ -97,9 +99,10 @@ form {
     border: 2px solid #282E4C;
     border-radius: 20px;
     color: #272737;
-    font-family: SeoulHangang CB;
+    font-family: "SeoulHangang CB", sans-serif;
     font-size: 16px;
     outline: none;
+    background-color: #f9f7f7;
 }
 
 /* Button */
@@ -110,7 +113,7 @@ form {
     margin-top: 20px;
     background: #282E4C;
     color: #F8F7F7;
-    font-family: SeoulNamsan;
+    font-family: SeoulNamsan, sans-serif;
     font-size: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -126,7 +129,7 @@ form {
 .summary-text {
     color: #272737;
     text-align: right;
-    font-family: SeoulHangang CB;
+    font-family: "SeoulHangang CB";
     font-size: 20px;
     margin-right: 20px;
 }
@@ -225,3 +228,9 @@ form {
   .nav-item.active::before {
     transform: translate(-50%, -50%) scale(1); /* Expands the circle smoothly */
   }
+
+    /* Media queries */
+@media screen and (min-width: 400px) {
+    .bottom-nav {
+      max-width: 1080px;
+    }

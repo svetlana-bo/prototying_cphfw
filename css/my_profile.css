@@ -104,7 +104,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: "SeoulHangang CB";
+  font-family: "SeoulHangang CB", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -129,3 +129,9 @@
 .purchase-button:active {
   transform: scale(1.05); /* Slightly enlarge the button */
 }
+
+  /* Media queries */
+  @media screen and (min-width: 400px) {
+    .bottom-nav {
+      max-width: 1080px;
+    }

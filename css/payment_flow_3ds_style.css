@@ -20,7 +20,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f4f4f4;
+    background-color: #f9f7f7;;
 }
 
 /* main content */
@@ -50,14 +50,14 @@ body {
 .container h1 {
     color: #272737;
     text-align: center;
-    font-family: SeoulNamsan;
+    font-family: SeoulNamsan, sans-serif;
     font-size: 20px;
 }
 
 .container p {
     color: #272737;
     text-align: center;
-    font-family: SeoulNamsan;
+    font-family: SeoulNamsan, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -80,7 +80,7 @@ body {
     background-color: #282E4C;
     color: white;
     text-align: center;
-    font-family: SeoulNamsan;
+    font-family: SeoulNamsan, sans-serif;
     text-decoration: none;
     width: auto;
     display: inline-block;
@@ -101,3 +101,9 @@ body {
     border-color: #3a3f63;
     transform: scale(1.05); /* Slightly enlarge the button */
 }
+
+  /* Media queries */
+  @media screen and (min-width: 400px) {
+    .bottom-nav {
+      max-width: 1080px;
+    }

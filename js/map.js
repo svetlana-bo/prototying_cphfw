@@ -86,7 +86,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     <h3>Han Kjobenhavn</h3>
                     <p>8 August<br>17:00<br>Den Grå Hal</p>
                 </div>
+                <a href="events/event-han-kjobenavn.html" style="text-decoration: none;">
                 <button class="learn-more-button">Learn More</button>
+                </a>
             </div>
         `}
     ];
