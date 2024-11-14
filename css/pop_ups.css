@@ -31,13 +31,13 @@
   
   /* Popup title and paragraph */
   .popup-title {
-    font-family: SeoulNamsanEB;
+    font-family: SeoulNamsanEB, sans-serif;
     font-size: 20px;
     margin: 0 0 10px;
   }
   
   .popup-paragraph {
-    font-family: SeoulNamsan;
+    font-family: SeoulNamsan,sans-serif;
     font-size: 16px;
     margin: 0 0 20px;
   }
@@ -113,7 +113,7 @@
 .view-favourites-button {
   color: #272737;
   text-align: center;
-  font-family: SeoulNamsan;
+  font-family: SeoulNamsan, sans-serif;
   font-size: 20px;
   font-style: normal;
   text-decoration-line: underline;
@@ -139,7 +139,7 @@
   width: 80%;
   font-size: 20px;
   text-align: center;
-  font-family: SeoulNamsan;
+  font-family: SeoulNamsan, sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
 }
@@ -201,7 +201,7 @@
 .back-to-home-button {
   color: #272737;
   text-align: center;
-  font-family: SeoulNamsan;
+  font-family: SeoulNamsan, sans-serif;
   font-size: 20px;
   font-style: normal;
   text-decoration-line: underline;
@@ -236,3 +236,9 @@
   background-color: #3a3f63;
   transform: scale(1.05);
 }
+
+  /* Media queries */
+  @media screen and (min-width: 400px) {
+    .bottom-nav {
+      max-width: 1080px;
+    }

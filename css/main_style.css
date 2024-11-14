@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "SeoulHangang CB";
+  font-family: "SeoulHangang CB", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -193,7 +193,7 @@ nav .active {
   cursor: pointer;
   font-weight: bold;
   color: #282E4C;
-  font-family: SeoulNamsan;
+  font-family: SeoulNamsan, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -221,7 +221,7 @@ nav .active {
   cursor: pointer;
   font-weight: bold;
   color: #282E4C;
-  font-family: SeoulNamsan;
+  font-family: SeoulNamsan, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -350,3 +350,9 @@ nav .active {
 .nav-item.active::before {
   transform: translate(-50%, -50%) scale(1); /* Expands the circle smoothly */
 }
+
+  /* Media queries */
+  @media screen and (min-width: 400px) {
+    .bottom-nav {
+      max-width: 1080px;
+    }

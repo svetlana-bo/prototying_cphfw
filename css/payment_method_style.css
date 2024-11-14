@@ -18,7 +18,7 @@ body {
     font-family: SeoulNamsan, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f7f7;;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -147,3 +147,9 @@ h1 {
   .nav-item.active::before {
     transform: translate(-50%, -50%) scale(1); /* Expands the circle smoothly */
   }
+
+    /* Media queries */
+@media screen and (min-width: 400px) {
+    .bottom-nav {
+      max-width: 1080px;
+    }

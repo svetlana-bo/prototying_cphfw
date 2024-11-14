@@ -22,7 +22,8 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
-}
+    background-color: #f9f7f7;
+  }
 
 /* main content */
 .container {
@@ -132,4 +133,10 @@ body {
   
   .nav-item.active::before {
     transform: translate(-50%, -50%) scale(1); /* Expands the circle smoothly */
+  }
+
+    /* Media queries */
+@media screen and (min-width: 400px) {
+  .bottom-nav {
+    max-width: 1080px;
   }

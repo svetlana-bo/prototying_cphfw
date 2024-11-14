@@ -161,3 +161,9 @@
 .add-to-cart-button:active {
     transform: scale(1.05); /* Slightly enlarge the button */
   }
+
+    /* Media queries */
+@media screen and (min-width: 400px) {
+  .bottom-nav {
+    max-width: 1080px;
+  }

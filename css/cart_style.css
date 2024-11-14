@@ -20,6 +20,7 @@
             flex-direction: column;
             margin: 0;
             padding: 20px;
+            background-color: #f8f7f7;
         }
 /* main content */
         .cart-header {
@@ -159,7 +160,7 @@
             text-align: right;
             margin-bottom: 20px;
             color: #282E4C;
-            font-family: SeoulNamsan;
+            font-family: SeoulNamsan, sans-serif;
             font-size: 24px;
             width: 100%;
         }
@@ -180,7 +181,7 @@
             color: #F8F7F7;
             text-decoration: none;
             text-align: center;
-            font-family: SeoulNamsan;
+            font-family: SeoulNamsan, sans-serif;
             font-size: 20px;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */

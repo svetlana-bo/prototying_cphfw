@@ -179,3 +179,9 @@ display: flex;
     align-items: center;     /* Centers the child element vertically if needed */
     width: 100%;             /* Ensures the container takes full width for centering */
 }
+
+  /* Media queries */
+  @media screen and (min-width: 400px) {
+    .bottom-nav {
+      max-width: 1080px;
+    }

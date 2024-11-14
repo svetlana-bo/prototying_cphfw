@@ -92,7 +92,7 @@ p {
         color: #F8F7F7;
         text-decoration: none;
         text-align: center;
-        font-family: SeoulNamsan;
+        font-family: SeoulNamsan,sans-serif;
         font-size: 20px;
         cursor: pointer;
         transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
@@ -108,7 +108,7 @@ p {
 .home-button {
     color: #272737;
     text-align: center;
-    font-family: SeoulNamsan;
+    font-family: SeoulNamsan, sans-serif;
     font-size: 20px;
     font-style: normal;
     text-decoration-line: underline;
@@ -134,3 +134,59 @@ p {
     top: 70%;
     left: 80%;
 }
+
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px;
+    background-color: #3E3E53;
+    padding: 10px;
+    border-radius: 21px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .nav-item {
+    position: relative;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .nav-item img {
+    width: 24px;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .nav-item.active {
+    transform: translateY(-20px); /* Lift active icon */
+  }
+  
+  .nav-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Start with scale of 0 */
+    width: 50px;
+    height: 50px;
+    background-color: #3E3E53; /* Circle color */
+    border-radius: 50%;
+    z-index: -1; /* Places the circle behind the icon */
+    transition: transform 2s ease-out; /* Smooth expansion */
+  }
+  
+  .nav-item.active::before {
+    transform: translate(-50%, -50%) scale(1); /* Expands the circle smoothly */
+  }
+  
+    /* Media queries */
+    @media screen and (min-width: 400px) {
+      .bottom-nav {
+        max-width: 1080px;
+      }

@@ -19,6 +19,7 @@ body {
     padding: 0;
     align-items: center;
     justify-content: center;
+    background-color: #f8f7f7;
 }
 
 /* main content*/
@@ -43,14 +44,14 @@ body {
 .container h1 {
     color: #272737;
     text-align: center;
-    font-family: SeoulNamsan;
+    font-family: SeoulNamsan,sans-serif;
     font-size: 20px;
 }
 
 .container p {
     color: #272737;
     text-align: center;
-    font-family: SeoulNamsan;
+    font-family: SeoulNamsan, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -74,7 +75,7 @@ body {
 .form-group {
     flex: 1;
     color: #B27889;
-    font-family: SeoulNamsan;
+    font-family: SeoulNamsan, sans-serif;
     font-size: 14px;
 }
 
@@ -83,7 +84,7 @@ input[type="text"], input[type="password"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-family: SeoulNamsan;
+    font-family: SeoulNamsan, sans-serif;
     font-size: 14px;
 }
 
@@ -100,6 +101,7 @@ input[type="text"]:focus, input[type="password"]:focus {
     height: 20px;
     border: 2px solid #B27889;
     border-radius: 20px;
+    background-color: #f8f7f7;
 }
 
 #card-number {
@@ -110,6 +112,7 @@ input[type="text"]:focus, input[type="password"]:focus {
     height: 20px;
     border: 2px solid #B27889;
     border-radius: 20px;
+    background-color: #f8f7f7;
 }
 
 .cvv-group {
@@ -145,6 +148,7 @@ input[type="text"]:focus, input[type="password"]:focus {
     width: 70%;  /* Ensures they are both the same width */
     border: 2px solid #B27889;
     border-radius: 20px;
+    background-color: #f8f7f7;
 }
 
 #cvv {
@@ -156,6 +160,7 @@ input[type="text"]:focus, input[type="password"]:focus {
     width: 70%;  /* Ensures they are both the same width */
     border: 2px solid #B27889;
     border-radius: 20px;
+    background-color: #f8f7f7;
 }
 
 /* buttons */
@@ -181,23 +186,23 @@ button {
 
 /* Cancel Button */
 button[type="cancel"] {
-    background-color: white;
+    background-color: #f8f7f7;
     color: #282E4C;
     text-align: center;
-    font-family: SeoulNamsan;
+    font-family: SeoulNamsan, sans-serif;
 }
 
 /* Confirm Button */
 button[type="confirm"] {
     background-color: #282E4C;
-    color: white;
+    color: #f8f7f7;;
     text-align: center;
-    font-family: SeoulNamsan;
+    font-family: SeoulNamsan, sans-serif;
 }
 
 /*Hover Effects*/
 button[type="cancel"]:hover {
-    background-color: #f4f4f4; 
+    background-color: #f8f7f7;; 
     color: #000; 
     transform: scale(1.05); /* Slightly enlarge the button */
 }
@@ -206,3 +211,9 @@ button[type="confirm"]:hover {
     background-color: #3a3f63;
     transform: scale(1.05); /* Slightly enlarges the button */
 }
+
+  /* Media queries */
+  @media screen and (min-width: 400px) {
+    .bottom-nav {
+      max-width: 1080px;
+    }
