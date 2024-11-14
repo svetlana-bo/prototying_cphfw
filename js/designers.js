@@ -24,7 +24,7 @@ dragbtns.forEach(dragbtn => {
 designerSlide.addEventListener('transitionend', () => {
     if(designerImages[counter].id === 'lastclone'){
         designerSlide.style.transition = "none";
-        counter = designerImages.height - 2;
+        counter = designerImages.length - 2;
         designerSlide.style.transform = 'translateY(' + (-size * counter) + 'px)';
     }
     if(designerImages[counter].id === 'firstclone'){
