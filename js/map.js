@@ -111,7 +111,7 @@ if (navigator.geolocation) {
 
         // Define a custom icon for the user's location
         var userIcon = L.icon({
-            iconUrl: 'ICONS/icons-pin-red.svg', // Path to your custom "You are here" marker icon
+            iconUrl: 'icons/icons-pin-red.svg', // Path to your custom "You are here" marker icon
             iconSize: [32, 32], // size of the icon [width, height]
             iconAnchor: [16, 32], // point of the icon which will correspond to marker's location (tip of the marker)
             popupAnchor: [0, -32] // point from which the popup should open relative to the iconAnchor
