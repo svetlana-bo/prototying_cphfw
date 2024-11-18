@@ -93,6 +93,7 @@ header {
   color: #434d80;
   font: 400 16px/1.5 SeoulNamsan, sans-serif;
   border-radius: 13px;
+  text-align: center;
 
 }
 
@@ -356,4 +357,4 @@ nav .active {
     .bottom-nav {
       max-width: 1080px;
     }
-  
+  }

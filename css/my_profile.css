@@ -51,7 +51,7 @@
 }
 
 .profile-login-button {
-  margin-top: none; 
+  margin-top: 0; 
   background-color: #5966AA;
   border: none;
   width: 105px;
@@ -62,7 +62,8 @@
   color: #f8f7f7;
   font: 400 16px/1.5 SeoulNamsan, sans-serif;
   border-radius: 13px;
-
+  text-align: center;
+  text-decoration: none;
 }
 
 .profile-login-button:active {
@@ -124,6 +125,8 @@
   border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s;
+  text-align: center;
+  text-decoration: none;
 }
 
 .purchase-button:active {
@@ -135,3 +138,4 @@
     .bottom-nav {
       max-width: 1080px;
     }
+  }
